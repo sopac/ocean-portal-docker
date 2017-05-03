@@ -1,0 +1,47 @@
+MAP
+    NAME           "ocean_portal"
+    IMAGETYPE      PNG24
+    SIZE           400 300
+#    SHAPEPATH      "/data/comp/raster"
+    FONTSET        "../fonts/fonts.list"
+
+    PROJECTION
+        "init=epsg:4326"
+    END
+
+    EXTENT         0 -90 360 90
+    UNITS          DD
+
+    WEB
+        METADATA
+            "wms_title"    "Ocean Portal"
+            "wms_onlineresource"    "http://tuscany.bom.gov.au/sheng/cgi/map.py"
+            "wms_srs"   "EPSG:4326"
+            "wms_enable_request"    "*"
+        END
+    END
+
+    LAYER
+        NAME         plot 
+        METADATA
+            "wms_title"    "plot"
+        END
+        DATA         "%base%" 
+        STATUS       ON
+        TYPE         POLYGON
+        VALIDATION
+            'base'     '^/'
+            'plotName' 'shp$'
+        END
+
+        CLASSITEM    "DN"
+
+        CLASS  #color for the contour line 
+            EXPRESSION ([DN]==0)
+
+            STYLE
+                COLOR "#008000"
+            END
+        END
+    END
+END

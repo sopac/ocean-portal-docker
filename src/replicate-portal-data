@@ -1,0 +1,62 @@
+#!/usr/bin/python
+
+#RSYNC_COMMAND = "rsync --rsync-path='sudo rsync' -ruvxm %(flags)s --include='*/' %(args)s --exclude='*' %(source)s %(dest)s"
+RSYNC_COMMAND = "rsync -ruvxm %(flags)s --include='*/' %(args)s --exclude='*' %(source)s %(dest)s"
+
+# file globs to transfer
+INCLUDE_LIST = [ '*.nc',
+                 '*.nc4',
+                 '*.txt',
+                 '*_preliminary.nc'
+               ]
+# file globs to exclude from above
+EXCLUDE_LIST = [
+                 'new/*',
+                 'archive/*',
+               ]
+
+# default flags to pass if RSYNC_FLAGS isn't defined, other options might be
+# -n (dry-run), --delete-excluded or '' to update existing (overwrite)
+DEFAULT_FLAGS = ''
+
+import sys
+import os.path
+import subprocess
+
+from ocean import util, config
+from ocean.config import serverConfig
+
+to_server = sys.argv[1]
+
+from_data = config.get_server_config()['dataDir']
+to_data = getattr(serverConfig, to_server)()['dataDir']
+
+for (dataset, from_datadir), to_datadir in zip(from_data.items(), to_data.values()):
+    try:
+        Dataset = util.import_dataset(dataset)
+    except ImportError as e:
+        print >> sys.stderr, "Could not import %s, skipping (%s)" % (dataset, e)
+        continue
+
+    try:
+        subdirs = Dataset.__subdirs__
+    except AttributeError:
+        print >> sys.stderr, "%s.__subdirs__ not defined, skipping" % (dataset)
+        continue
+
+    for subdir in subdirs:
+        from_dir = '%s/' % (os.path.join(from_datadir, subdir))
+        to_dir = '%s:%s/' % (to_server, os.path.join(to_datadir, subdir))
+
+        args = []
+        args += map(lambda i: "--exclude='%s'" % i, EXCLUDE_LIST)
+        args += map(lambda i: "--include='%s'" % i, INCLUDE_LIST)
+
+        command = RSYNC_COMMAND % { 'source': from_dir,
+                                    'dest': to_dir,
+                                    'args': ' '.join(args),
+                                    'flags': os.getenv('RSYNC_FLAGS',
+                                                default=DEFAULT_FLAGS),
+                                  }
+        print command
+        subprocess.call(command, shell=True)

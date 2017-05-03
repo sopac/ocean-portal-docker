@@ -1,0 +1,8 @@
+/*<![CDATA[*/
+
+.control-label{font-weight:bold; color:#655E30;}
+.control-label{display:block; clear:left; float:left;padding-right:5px;}
+select.control-list {height:auto;margin:0;padding:0;font-size:1em;}
+select.date-list {width:5.3em;height:auto;margin:0;padding:0;font-size:1em;}
+
+/*]]*/

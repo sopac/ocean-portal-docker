@@ -1,0 +1,161 @@
+MAP
+    NAME           "ocean_portal"
+    IMAGETYPE      PNG24
+    SIZE           400 300
+#    SHAPEPATH      "/data/comp/raster"
+    FONTSET        "../fonts/fonts.list"
+
+    PROJECTION
+        "init=epsg:4326"
+    END
+
+    EXTENT         0 -90 360 90
+    UNITS          DD
+
+    WEB
+        METADATA
+            "wms_title"    "Ocean Portal"
+            "wms_onlineresource"    "http://tuscany.bom.gov.au/sheng/cgi/map.py"
+            "wms_srs"   "EPSG:4326"
+            "wms_enable_request"    "*"
+        END
+    END
+
+    LAYER
+        NAME         plot 
+        METADATA
+            "wms_title"    "plot"
+        END
+        DATA         "%base%" 
+        STATUS       ON
+        TYPE         POLYGON
+        VALIDATION
+            'base'     '^/'
+            'plotName' 'shp$'
+        END
+
+        CLASSITEM    "DN"
+
+        CLASS
+            EXPRESSION ([DN]==0)
+
+            STYLE
+                COLOR "#800000"
+            END
+        END
+
+        CLASS  #color for the continent
+            EXPRESSION ([DN]==5)
+
+            STYLE
+             #   COLOR "#fafafa"
+                COLOR "#ffffff"
+            END
+        END
+
+        CLASS
+            EXPRESSION ([DN]==20)
+
+            STYLE
+                COLOR "#d90000"
+            END
+        END
+
+        CLASS
+            EXPRESSION ([DN]==39)
+
+            STYLE
+                COLOR "#ff3c00"
+            END
+        END
+
+        CLASS
+            EXPRESSION ([DN]==59)
+
+            STYLE
+                COLOR "#ff8500"
+            END
+        END
+
+        CLASS
+            EXPRESSION ([DN]==78)
+
+            STYLE
+                COLOR "#ffce00"
+            END
+        END
+
+        CLASS
+            EXPRESSION ([DN]==98)
+
+            STYLE
+                COLOR "#daff1c"
+            END
+        END
+
+        CLASS
+            EXPRESSION ([DN]==118)
+
+            STYLE
+                COLOR "#9bff5c"
+            END
+        END
+
+        CLASS
+            EXPRESSION ([DN]==137)
+
+            STYLE
+                COLOR "#5cff9b"
+            END
+        END
+
+        CLASS
+            EXPRESSION ([DN]==157)
+
+            STYLE
+                COLOR "#1cffda"
+            END
+        END
+
+        CLASS
+            EXPRESSION ([DN]==177)
+
+            STYLE
+                COLOR "#00baff"
+            END
+        END
+
+        CLASS
+            EXPRESSION ([DN]==196)
+
+            STYLE
+                COLOR "#006cff"
+            END
+        END
+
+        CLASS
+            EXPRESSION ([DN]==216)
+
+            STYLE
+                COLOR "#001dff"
+            END
+        END
+
+        CLASS
+            EXPRESSION ([DN]==235)
+
+            STYLE
+                COLOR "#0000d9"
+            END
+        END
+
+
+        CLASS
+            EXPRESSION ([DN]==255)
+
+            STYLE
+                COLOR "#000080"
+            END
+        END
+    END
+END

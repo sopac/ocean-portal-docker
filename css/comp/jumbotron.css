@@ -1,0 +1,148 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background-color: #165C7D;
+}
+
+.col-lg-4 {
+  width: 350px;
+  height: 200px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.col-lg-4 h2 {
+  color: #ffffff;
+}
+
+.modal-dialog {
+    margin-top: 10%;
+}
+
+div#coral {
+  background-color: #008EAA;
+  background-image: url(../../images/coral.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+div#coral:hover {
+  background-color: #197C90;
+}
+
+div#fishery {
+  background-color: #7BAFD4;
+  background-image: url(../../images/fishing.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+div#fishery:hover {
+  background-color: #397EAF;
+}
+
+div#tour {
+  background-color: #00AFD7;
+  background-image: url(../../images/surfer.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+div#tour:hover {
+  background-color: #209AB6;
+}
+
+div#sealevel {
+  background-color: #ABC7CA;
+  background-image: url(../../images/sealevel.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+div#sealevel:hover {
+  background-color: #6C9DA2;
+}
+
+div#climate {
+  background-color: #00B388;
+  background-image: url(../../images/climate.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+div#climate:hover {
+  background-color: #1A987A;
+}
+
+div#shipping {
+  background-color: #00965E;
+  background-image: url(../../images/shipping.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+div#shipping:hover {
+  background-color: #167F58;
+}
+
+h5 {
+  font-size: 1.5em;
+}
+
+
+#control {
+  background-color: #AEACED;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+}
+
+#map-container {
+    width: 100%;
+    height: 0;
+    padding-bottom: 70%;
+}
+
+.reactive{
+/*    background-color: #07618B;*/
+    background-color: #EEEEEE;
+}
+
+#breaker{
+    background-color: #BBBBBB;
+    padding: 4px;
+    border: 2px solid;
+    border-color: #EEEEEE;
+/*    z-index: 1;*/
+}
+
+#breaker:hover {
+    border: 2px solid;
+    border-radius: 5px;
+}
+
+.fotorama__caption__wrap {
+    background-color: #EEEEEE;
+}
+
+.jumbotron {
+   padding: 0px;
+   margin-bottom: 20px;
+}
+
+.datepicker[readonly] {
+   cursor: pointer;
+}
+
+#back_to_menu{
+    float: right;
+}
+
+#portal_title {
+    margin-bottom: -10px;
+}
+
+#download_slider_png {
+   float: right;
+}

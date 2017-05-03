@@ -1,0 +1,81 @@
+{
+  "sst": {
+    "name": "Ocean Temperature",
+    "vars": [ "meansst", "sstanom", "sstdec", "ssttrend" ]
+  },
+
+  "salt": {
+    "name": "Salinity",
+    "vars": [ "salt" ]
+  },
+
+  "waves": {
+    "name": "Waves",
+    "vars": [ "Hs", "Tm", "Dm", "atlas" ]
+  },
+
+  "sealevel": {
+    "name": "Historical Sea Level",
+    "vars": [ "alt", "rec", "gauge", "eta" ]
+  },
+
+  "currents": {
+    "name": "Currents",
+    "vars": [ "uv", "uveta" ]
+  },
+
+  "crw": {
+    "name": "Coral Reef Watch",
+    "vars": ["daily", "outlook"]
+  },
+ 
+  "chlodaily": {
+    "name": "Chlorophyll-A",
+    "vars": ["chldaily"]
+  },
+  
+  "msla": {
+    "name": "Near Real Time Sea Level",
+    "vars": ["sla", "tide"]
+  }, 
+
+  "poamasla": {
+    "name": "Seasonal Sea Level Forecast",
+    "vars": ["height"]
+  },
+
+  "poamassta": {
+    "name": "Seasonal Sea Surface Temperature Forecast",
+    "vars": ["ssta"]
+  },
+
+  "poamasst": {
+    "name": "Seasonal Sea Surface Temperature Forecast",
+    "vars": ["sst"]
+  },
+
+  "ww3forecast": {
+    "name": "Wave Forecast",
+    "vars": ["sig_wav_ht", "sig_ht_wnd_sea", "sig_ht_sw1", "pk_wav_per", "wnd_spd"]
+  },
+
+  "currentforecast": {
+    "name": "Forecast Surface Currents",
+    "vars": ["currents"]
+  },
+
+  "chlomonthly": {
+    "name": "Chlorophyll-A",
+    "vars": ["chlmonthly"]
+  },
+
+  "convergence": {
+    "name": "Daily Sea Surface Temperature",
+    "vars": ["mean"]
+  },
+
+  "mur": {
+    "name": "Multiscale Ultrahigh Resolution (MUR) Level 4 Sea Surface Temperature",
+    "vars": ["mursst"]
+  }
+}

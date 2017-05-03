@@ -1,0 +1,548 @@
+MAP
+    NAME           "ocean_portal"
+    IMAGETYPE      PNG24
+    SIZE           400 300
+    SHAPEPATH      "layers"
+    IMAGECOLOR     135 216 250
+    FONTSET        "../fonts/fonts.list"
+
+    PROJECTION
+        "init=epsg:4326"
+    END
+
+    EXTENT         -180 -90 180 90
+    UNITS          DD
+ 
+    WEB
+        METADATA
+            "wms_title"    "Ocean Portal"
+            "wms_onlineresource"    "http://tuscany.bom.gov.au/sheng/cgi/map.py"
+            "wms_srs"   "EPSG:4326"
+            "wms_enable_request"    "*"
+        END
+    END
+
+    LAYER
+        NAME         bathymetry_0
+        METADATA
+            "wms_title"    "bathymetry_0"
+        END
+        DATA         bathymetry_0
+        GROUP        bathymetry
+        STATUS       ON
+        TYPE         POLYGON
+
+        CLASS
+            NAME 'bathymetry_0'
+
+            STYLE
+                COLOR      135 216 250
+                OUTLINECOLOR 135 216 250
+                WIDTH 2
+                ANTIALIAS TRUE
+            END
+        END
+    END
+
+    LAYER
+        NAME         bathymetry_200
+        METADATA
+            "wms_title"    "bathymetry_200"
+        END
+        DATA         bathymetry_200
+        GROUP        bathymetry
+        STATUS       ON
+        TYPE         POLYGON
+
+        CLASS
+            NAME 'bathymetry_200'
+
+            STYLE
+                COLOR      69 194 248
+                OUTLINECOLOR 69 194 248
+                WIDTH 2
+                ANTIALIAS TRUE
+            END
+        END
+    END
+
+    LAYER
+        NAME         bathymetry_1000
+        METADATA
+            "wms_title"    "bathymetry_1000"
+        END
+        DATA         bathymetry_1000
+        GROUP        bathymetry
+        STATUS       ON
+        TYPE         POLYGON
+
+        CLASS
+            NAME 'bathymetry_1000'
+
+            STYLE
+                COLOR      45 186 247
+                OUTLINECOLOR 45 186 247
+                WIDTH 2
+                ANTIALIAS TRUE
+            END
+        END
+    END
+
+    LAYER
+        NAME         bathymetry_2000
+        METADATA
+            "wms_title"    "bathymetry_2000"
+        END
+        DATA         bathymetry_2000
+        GROUP        bathymetry
+        STATUS       ON
+        TYPE         POLYGON
+
+        CLASS
+            NAME 'bathymetry_2000'
+
+            STYLE
+                COLOR      18 177 245
+                OUTLINECOLOR 18 177 245
+                WIDTH 2
+                ANTIALIAS TRUE
+            END
+        END
+    END
+
+    LAYER
+        NAME         bathymetry_3000
+        METADATA
+            "wms_title"    "bathymetry_3000"
+        END
+        DATA         bathymetry_3000
+        GROUP        bathymetry
+        STATUS       ON
+        TYPE         POLYGON
+
+        CLASS
+            NAME 'bathymetry_3000'
+
+            STYLE
+                COLOR      9 160 225
+                OUTLINECOLOR 9 160 225
+                WIDTH 2
+                ANTIALIAS TRUE
+            END
+        END
+    END
+
+    LAYER
+        NAME         bathymetry_4000
+        METADATA
+            "wms_title"    "bathymetry_4000"
+        END
+        DATA         bathymetry_4000
+        GROUP        bathymetry
+        STATUS       ON
+        TYPE         POLYGON
+
+        CLASS
+            NAME 'bathymetry_4000'
+
+            STYLE
+                COLOR      7 141 199
+                OUTLINECOLOR 7 141 199
+                WIDTH 2
+                ANTIALIAS TRUE
+            END
+        END
+    END
+
+    LAYER
+        NAME         bathymetry_5000
+        METADATA
+            "wms_title"    "bathymetry_5000"
+        END
+        DATA         bathymetry_5000
+        GROUP        bathymetry
+        STATUS       ON
+        TYPE         POLYGON
+
+        CLASS
+            NAME 'bathymetry_5000'
+
+            STYLE
+                COLOR      6 125 176
+                OUTLINECOLOR 6 125 176
+                WIDTH 2
+                ANTIALIAS TRUE
+            END
+        END
+    END
+
+    LAYER
+        NAME         bathymetry_6000
+        METADATA
+            "wms_title"    "bathymetry_6000"
+        END
+        DATA         bathymetry_6000
+        GROUP        bathymetry
+        STATUS       ON
+        TYPE         POLYGON
+
+        CLASS
+            NAME 'bathymetry_6000'
+
+            STYLE
+                COLOR      6 114 159
+                OUTLINECOLOR  6 114 159
+                WIDTH 2
+                ANTIALIAS TRUE
+            END
+        END
+    END
+
+    LAYER
+        NAME         bathymetry_7000
+        METADATA
+            "wms_title"    "bathymetry_7000"
+        END
+        DATA         bathymetry_7000
+        GROUP        bathymetry
+        STATUS       ON
+        TYPE         POLYGON
+
+        CLASS
+            NAME 'bathymetry_7000'
+
+            STYLE
+                COLOR      5 101 141
+                OUTLINECOLOR 5 101 141
+                WIDTH 2
+                ANTIALIAS TRUE
+            END
+        END
+    END
+
+    LAYER
+        NAME         bathymetry_8000
+        METADATA
+            "wms_title"    "bathymetry_8000"
+        END
+        DATA         bathymetry_8000
+        GROUP        bathymetry
+        STATUS       ON
+        TYPE         POLYGON
+
+        CLASS
+            NAME 'bathymetry_8000'
+
+            STYLE
+                COLOR      4 71 100
+                OUTLINECOLOR 4 71 100
+                WIDTH 2
+                ANTIALIAS TRUE
+            END
+        END
+    END
+
+    LAYER
+        NAME         bathymetry_9000
+        METADATA
+            "wms_title"    "bathymetry_9000"
+        END
+        DATA         bathymetry_9000
+        GROUP        bathymetry
+        STATUS       ON
+        TYPE         POLYGON
+
+        CLASS
+            NAME 'bathymetry_9000'
+
+            STYLE
+                COLOR      2 52 77
+                OUTLINECOLOR  2 52 77
+                WIDTH 2
+                ANTIALIAS TRUE
+            END
+        END
+    END
+
+    LAYER
+        NAME         bathymetry_10000
+        METADATA
+            "wms_title"    "bathymetry_10000"
+        END
+        DATA         bathymetry_10000
+        GROUP        bathymetry
+        STATUS       ON
+        TYPE         POLYGON
+
+        CLASS
+            NAME 'bathymetry_10000'
+
+            STYLE
+                COLOR      0 29 43
+                OUTLINECOLOR 0 29 43
+                WIDTH 2
+                ANTIALIAS TRUE
+            END
+        END
+    END
+
+    SYMBOL
+        NAME "circle"
+        TYPE ellipse
+        POINTS
+            1 1
+        END
+    END
+
+    LAYER
+        NAME         reeflocations 
+         METADATA
+            "wms_title"    "reef_locations"
+        END
+        DATA         ReefLocations
+        GROUP        reef 
+        STATUS       ON
+        TYPE         POINT
+
+        CLASS
+            NAME 'reeflocations'
+
+            STYLE
+                SYMBOL     'circle'
+                COLOR      0 0 0
+                SIZE       1
+            END
+        END
+    END
+
+    LAYER
+        NAME         alertdial 
+         METADATA
+            "wms_title"    "alertdial"
+        END
+        DATA         CRW_Outlines
+        GROUP        reef 
+        STATUS       ON
+        TYPE         POLYGON 
+
+        CLASS
+            NAME 'alerdial'
+
+            STYLE
+                STYLE
+                OUTLINECOLOR 0 0 0
+                WIDTH 1
+                ANTIALIAS TRUE
+            END
+        END
+    END
+
+    LAYER
+        NAME         marineparks 
+         METADATA
+            "wms_title"    "marine_parks"
+        END
+        DATA         MP_FINAL 
+        GROUP        marineparks 
+        STATUS       ON
+        TYPE         POLYGON
+
+        CLASS
+            NAME 'bathymetry_10000'
+
+            STYLE
+                COLOR 0 153 0 
+                OUTLINECOLOR 0 0 0
+                WIDTH 1
+                ANTIALIAS TRUE
+            END
+        END
+    END
+
+    LAYER # States polygon layer begins here
+        NAME        greyland_n 
+        METADATA
+            "wms_title"    "greyland_n"
+        END
+        DATA         northern_pac
+        STATUS       ON
+        TYPE         POLYGON
+
+        CLASS
+            NAME 'greyland_n'
+
+            STYLE
+                COLOR     150 150 150 
+                OUTLINECOLOR 150 150 150 
+                WIDTH 1
+                ANTIALIAS TRUE
+            END
+        END
+    END # States polygon layer ends here
+
+    LAYER # States polygon layer begins here
+        NAME        greyland 
+        METADATA
+            "wms_title"    "greyland"
+        END
+        DATA         southern_pac
+        STATUS       ON
+        TYPE         POLYGON
+
+        CLASS
+            NAME 'greyland'
+
+            STYLE
+                COLOR     150 150 150 
+                OUTLINECOLOR 50 50 50 
+                WIDTH 1
+                ANTIALIAS TRUE
+            END
+        END
+    END # States polygon layer ends here
+
+    LAYER # States polygon layer begins here
+        NAME         southern_pac
+        METADATA
+            "wms_title"    "Southern_Pac"
+        END
+        DATA         southern_pac
+        GROUP        land
+        STATUS       ON
+        TYPE         POLYGON
+
+        CLASS
+            NAME 'land'
+
+            STYLE
+                COLOR      229 222 201
+                OUTLINECOLOR  197 137 9
+                WIDTH 1
+                ANTIALIAS TRUE
+            END
+        END
+    END # States polygon layer ends here
+
+    LAYER # States polygon layer begins here
+        NAME         world
+        METADATA
+            "wms_title"    "World"
+        END
+        DATA         land
+        GROUP        land
+        STATUS       ON
+        TYPE         POLYGON
+        FILTERITEM   "southern_p"
+        FILTER       "0"
+
+        CLASS
+            NAME 'land'
+
+            STYLE
+                COLOR      229 222 201
+                OUTLINECOLOR  229 222 201 # FIXME: outline coasts
+                WIDTH 1
+                ANTIALIAS TRUE
+            END
+        END
+    END # States polygon layer ends here
+
+    LAYER
+        NAME       maritime
+        METADATA
+            "wms_title"    "maritime"
+        END
+        DATA         COSPPac_EEZs
+        STATUS       ON
+        TYPE         LINE
+        CLASS
+            NAME  maritime
+
+            STYLE
+                COLOR      0 0 0
+            END
+        END
+    END
+
+    SYMBOL
+        NAME "natcap"
+        TYPE TRUETYPE
+        FONT sans
+        FILLED true
+        ANTIALIAS true
+        CHARACTER "&#9733;"
+    END
+
+    LAYER
+        NAME         countries
+        METADATA
+            "wms_title"    "countries"
+        END
+        DATA         pacific_islands_capitals
+        STATUS       ON
+        TYPE         POINT
+
+        PROCESSING "LABEL_NO_CLIP=True"
+        LABELITEM    "NAME"
+        CLASSITEM    "SCALERANK"
+        SYMBOLSCALEDENOM 50 
+        CLASS
+            EXPRESSION ([SCALERANK]==1)
+            LABEL
+                COLOR 0 0 0
+                SHADOWSIZE 1 1
+                TYPE TRUETYPE
+                FONT sans
+                SIZE 11
+                MINSIZE 8
+                MAXSIZE 12
+                MAXLENGTH 10
+                WRAP ' '
+                ANTIALIAS TRUE
+                POSITION AUTO
+                OFFSET 1 1
+                PARTIALS FALSE
+            END # end of label
+        END
+    END
+
+    LAYER
+        NAME         capitals
+        METADATA
+            "wms_title"    "capitals"
+        END
+        DATA         pacific_islands_capitals
+        STATUS       ON
+        TYPE         POINT
+
+        LABELITEM    "NAME"
+        CLASSITEM    "SCALERANK"
+#        MINSCALEDENOM    50 
+#        MAXSCALEDENOM    1000
+#        SYMBOLSCALEDENOM 1000
+#        SYMBOLSCALEDENOM 50 
+
+        CLASS
+            EXPRESSION ([SCALERANK]==2)
+            LABEL
+                COLOR 0 0 0
+                SHADOWSIZE 1 1
+                TYPE TRUETYPE
+                FONT sans
+                SIZE 8 
+                MAXSIZE 10 
+                ANTIALIAS TRUE
+                POSITION AUTO
+                PARTIALS FALSE 
+            END # end of label
+
+            STYLE
+                SYMBOL "natcap"
+                COLOR 0 0 0
+                SIZE 6 
+                MAXSIZE 6
+            END
+        END
+    END
+
+END

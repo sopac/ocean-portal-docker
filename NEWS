@@ -1,0 +1,143 @@
+Ocean Map Portal 0.3.3
+======================
+
+New Features:
+ 
+
+Bugs Fixed:
+ - Updated colorbar to only show 26-32 in local regions
+ - Change coral download
+ - Update date field to today
+ - Switch to the new GIT repository
+ - Added git pub key to the gitolite key dir
+ - Set git global user name and email
+
+
+Ocean Map Portal 0.3.2
+======================
+
+New Features:
+
+ - reimplement IE7 support (Danni)
+ - reduce code duplication (Danni)
+ - logging to monitor performance (Danni)
+
+Bugs Fixed:
+
+ - no scrollbars on loading dialog (Danni)
+
+Ocean Map Portal 0.3.1
+======================
+
+Bugs Fixed:
+
+ - Fix race where map isn't always sized properly onload in Chrome (Danni)
+ - Improve position and sizing of map labels when zoomed out (Danni)
+ - Move capitals for Kiribati and Tuvalu to be on land (Danni)
+
+Data:
+
+ - Update datasets.json for latest data (Nick)
+
+Ocean Map Portal 0.3.0.1
+========================
+
+Bugs Fixed:
+
+ - Cache OpenLayers.js (Danni)
+
+Ocean Map Portal 0.3.0
+======================
+
+"Behold me fettered, clamped to these rough rocks, even as a ship is moored
+ fast by timid sailors, fearful of night because of the roaring sea."
+ --Prometheus Lyomenos, Aeschylus
+
+New Features:
+
+ - Reorient to be variable driven, totally new control panel (Danni)
+ - Unit and acceptance tests (Danni)
+ - Select any past map layer from Outputs (Danni)
+ - No more ExtJS [faster loading] (Danni)
+ - Parallelise plotting (Danni)
+ - New periods: Reynolds/ERSST/BRAN 3/6/12 month (mean) (Nick)
+ - New variables: anom/dec for Reynolds/ERSST multi-month
+ - New generic processing script (Nick)
+
+Bugs Fixed:
+
+ - Refactor SST classes (Danni)
+ - Fix rounding bug in lat/lon displays (Danni)
+ - Improve scalebar readability (Nick)
+ - Improve plots, move all plots to the generic plotter (Nick)
+ - Drive regions listing from backend (Danni)
+ - WCAG fixes (Danni)
+ - Separate out control panel from other frontend components (Danni)
+ - Subset Reynolds/ERSST datasets (Nick)
+ - Ensure contour labels are shown for Reynolds/ERSST (Nick)
+ - Autoguess plot resolution (with optional per-region override) (Danni)
+ - IE8 fixes (Danni)
+ - Plot fixes (Nick)
+ - Fix typo to ERSST About file (Danni)
+ - Compatibility fixes for standard RHEL6 libraries (Danni)
+ - Gracefully fail for requests outside data range (Danni)
+ - Add contour lines to decile plots (Nick)
+ - Update Reynolds start date (Nick)
+ - Fix bug where map wouldn't change position with some screen sizes (Danni)
+ - Fix bug where double-clicking caused map to jump (Danni)
+ - Report error when sealevel data is out of bounds or on land (Danni)
+
+Ocean Map Portal 0.2.0
+======================
+
+"小娃撑小艇" (A little child paddles a little boat)
+    --On the Lake, Bai Juyi
+
+New Features:
+
+ - Australian portal (Danni)
+ - map tile caching and compression (Danni)
+ - Improved layout on small screens, take advantage of available space (Danni)
+ - Consistent look and feel (Danni)
+ - 24 comparison plots (Danni)
+ - New library versions: OpenLayers, ExtJS, jQuery (Danni)
+ - Lat/lon markers automatically update from lat/lon changes (Danni)
+ - Hover over tidal gauges to see their names (Danni)
+ - Improved client side caching (Danni)
+ - Compressing JS/CSS resources to reduce bandwidth (Danni)
+ - Map improvements: landmask resolution, labels (Danni, Jason)
+ - only showing COSPPac EEZs (Danni)
+ - code cleanups (Danni and Nick)
+
+Bugs Fixed:
+
+ - remove white line on map at 180th meridian (Nick)
+ - plotting fixes (Nick)
+ - Fix date handling bugs in 31 day months (Danni)
+ - handling the months August and September correctly (Danni)
+ - general bug fixes (Danni, Nick, Jason)
+ - Fix direction of wave roses (Jason)
+
+Ocean Map Portal 0.1.0
+======================
+
+First release!
+
+Features:
+
+ - Package portal, remove hardcoded paths (Danni)
+ - Filter date ranges based on dataset (Sheng)
+ - Initial portal (Sheng)
+ - BRAN 2.1 (Nick, Billie)
+ - WW3 (Jason)
+ - ERSST (Luke Guarde)
+ - Reynolds SST (Matt Howie)
+ - Sealevel (Luke Guarde, Danni)
+ - About Files (Grant, Billie and Nick)
+
+Bugs Fixed:
+
+ - Standardise plots (Jason, Nick, Billie)
+ - Give error when selected point on land (Jason)
+ - Website doesn't render properly in IE (Danni)
+ - General bug fixes (Danni, Sheng, Billie, Jason, Nick)

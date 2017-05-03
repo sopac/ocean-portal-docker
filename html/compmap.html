@@ -1,0 +1,198 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<!--
+  (c) 2012 Commonwealth of Australia
+      Australian Bureau of Meteorology, COSPPac COMP
+      All Rights Reserved
+  -->
+
+<html>
+<head> 
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ocean Maps Portal Loading...</title>
+
+<script type="text/javascript" src="lib/jquery/{{jquery.js}}"></script>
+<script type="text/javascript" src="lib/jquery/{{jquery-ui.js}}"></script>
+
+<script type="text/javascript" src="js/comp/controlPanel.js?v={{VERSION}}"></script>
+<script type="text/javascript" src="js/comp/compmap.js?v={{VERSION}}"></script>
+<script type="text/javascript" src="js/comp/dsConf.js?v={{VERSION}}"></script>
+
+<link rel="stylesheet" type="text/css" href="lib/OpenLayers/theme/default/style.css"/>
+<link rel="stylesheet" type="text/css" href="lib/jquery/{{jquery-ui.css}}"/>
+
+<link rel="stylesheet" type="text/css" href="css/comp/controlPanel.css?v={{VERSION}}" />
+<link rel="stylesheet" type="text/css" href="css/comp/compmap.css?v={{VERSION}}" />
+<link rel="stylesheet" type="text/css" href="css/comp/controlvars.css?v={{VERSION}}" />
+
+</head>
+
+<body>
+  <div id="map" src="lib/OpenLayers/{{OpenLayers.js}}" class="panel layout-center">
+    <div id="legendDiv"></div>
+    <div id="enlargeDiv"></div>
+  </div>
+
+  <div class="panel layout-east">
+    <h1>Output</h1>
+    <div class="toolbar">
+      <a class="ui-icon ui-icon-help"
+         target="_blank" href="/cosppac/comp/ocean-portal/ocean-portal-help.shtml"
+         title="Help Guide"></a>
+      <a class="ui-icon ui-icon-mail-closed"
+         target="_self" href="mailto:COSPPac_SoftwareSupport@bom.gov.au"
+         title="Report Feedback"></a>
+    </div>
+    <div id="outputDiv" class="expand-v">
+    </div>
+  </div>
+
+  <div class="panel layout-west">
+    <h1>Parameters</h1>
+
+    <div id="regionPanel" class="border">
+      <div class="controlgroup">
+        <div class="controlvar">
+          <label for="region">Select Country/Region:</label>
+          <select id="region" class="widefield"></select>
+          <label class="hidden" for="subregion">Region/Subregion</label>
+          <select id="subregion" class="widefield"></select>
+        </div>
+      </div>
+    </div>
+
+    <div id="controlPanel">
+      <form>
+
+        <div class="controlgroup">
+          <div class="controlvar">
+            <label for="variable">Variable</label>
+            <select id="variable" class="field">
+              <option value="--">Select variable</option>
+            </select>
+          </div>
+
+          <div class="controlvar">
+            <label for="plottype">Plot Type</label>
+            <select id="plottype" class="field">
+              <optgroup label="Maps">
+                <option value="map">Surface Map</option>
+                <option value="xsections">Sub-surface Cross-section</option>
+              </optgroup>
+              <optgroup label="Timeseries">
+                <option value="ts">Timeseries</option>
+              </optgroup>
+              <optgroup label="Statistical">
+                <option value="histogram">Histogram</option>
+                <option value="waverose">Waverose</option>
+              </optgroup>
+            </select>
+          </div>
+        </div>
+
+        <div class="controlgroup">
+          <div class="controlvar">
+            <label for="period">Period</label>
+            <select id="period" class="field">
+              <option value="daily">Daily</option>
+              <option value="weekly">Weekly</option>
+              <option value="monthly">Monthly</option>
+              <option value="3monthly">3 monthly</option>
+              <option value="6monthly">6 monthly</option>
+              <option value="12monthly">12 monthly</option>
+              <option value="yearly">Yearly</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="controlgroup">
+          <div class="controlvar">
+              <label for="date">Date</label>
+              <input type="text" id="date" class="field datepicker"
+                     title="Click to open calendar"
+                     readonly="readonly"/>
+          </div>
+
+          <div class="controlvar">
+              <label for="year">Year</label>
+              <select id="year" class="field"></select>
+          </div>
+
+          <div class="controlvar">
+              <label for="month">Month</label>
+              <select id="month" class="field"></select>
+          </div>
+        </div>
+
+        <div class="controlgroup">
+          <span class="hint">Click a tidal gauge on the map to select.</span>
+          <div class="controlvar">
+            <label for="tidalgauge">Gauge</label>
+            <input type="text" id="tidalgauge" class="field" readonly="readonly"/>
+          </div>
+          <input type="hidden" id="tgId"/>
+        </div>
+
+        <div class="controlgroup">
+          <span class="hint">Click on the map to select a location.</span>
+          <div class="controlvar">
+            <label for="latitude">Latitude</label>
+            <input type="text" id="latitude" class="field"/>
+          </div>
+          <div class="controlvar">
+            <label for="longitude">Longitude</label>
+            <input type="text" id="longitude" class="field"/>
+          </div>
+        </div>
+
+        <div class="controlgroup">
+          <div class="controlvar">
+            <label for="dataset">Dataset</label>
+            <select id="dataset" class="field"></select>
+          </div>
+          <div class="controlvar">
+            <span class="label"></span>
+            <a id="dshelp" target="_blank" href="#">About <span>Dataset</span></a>
+          </div>
+        </div>
+
+        <div class="controlgroup">
+          <div class="controlvar">
+            <span class="label"></span>
+            <button id="submit" class="field">Submit</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div id="mapControls" class="panel layout-south">
+      <h1>Map Controls</h1>
+      <div class="controlgroup">
+        <h2>Layer</h2>
+        <div id="mapControlsLayers"></div>
+        <div id="mapControlsToolbar" class="olControlEditingToolbar"></div>
+      </div>
+      <p class="version">Version: {{VERSION}}</p>
+    </div>
+  </div>
+
+  <div id="error-dialog" class="dialog" title="Error">
+   <p>
+    <b>Error:</b>
+    <span id="error-dialog-content"></span>
+    <br/>
+    Please consider reporting this error to
+    <a href="mailto:COSPPac_SoftwareSupport@bom.gov.au">COSPPac Software
+    Support</a>.
+    <br/>
+    <small><a id="error-dialog-request" href="" target="_blank">Server Request</a></small>
+   </p>
+
+  </div>
+  <div id="loading-dialog" class="dialog">
+    <img src="images/loading.gif" />
+    <b>Loading...</b>
+  </div>
+
+</body>
+</html>

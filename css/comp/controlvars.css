@@ -1,0 +1,173 @@
+/* This CSS file defines variable, plot and period specific controls.
+ * It is done in CSS because it's actually nice to express in CSS, because
+ * rules cascade. As such ORDER IS IMPORTANT. Matching rules lower down
+ * override higher up rules.
+ */
+
+/* hide these by default */
+#date,
+#hour,
+#month,
+#year,
+#tidalgauge,
+#latitude,
+#longitude,
+#hour-slider,
+#reef,
+#marine,
+#alertdial
+{
+  display: none;
+}
+
+/* show #date for daily and weekly data */
+.period-daily #date,
+.period-weekly #date,
+.period-hourly #date
+{
+  display: inline;
+}
+
+/* show month/year for other data types */
+.period-monthly #month,
+.period-monthly #year,
+.period-3monthly #month,
+.period-3monthly #year,
+.period-6monthly #month,
+.period-6monthly #year,
+.period-12monthly #month,
+.period-12monthly #year,
+.period-yearly #year
+{
+  display: inline;
+}
+
+/* hide months/years for ts, waveroses and histograms */
+.plottype-ts #month,
+.plottype-ts #year,
+.plottype-waverose #year,
+.plottype-histogram #year,
+.variable-ssttrend #year
+{
+  display: none;
+}
+
+/* show latitude and longitude for TS, xsection, waverose and histogram */
+.plottype-ts #latitude,
+.plottype-ts #longitude,
+.plottype-xsections #latitude,
+.plottype-xsections #longitude,
+.plottype-waverose #latitude,
+.plottype-waverose #longitude,
+.plottype-histogram #latitude,
+.plottype-histogram #longitude
+{
+  display: inline;
+}
+
+/* Tidal gauges should show the gauge selector instead */
+.variable-gauge #latitude,
+.variable-gauge #longitude
+{
+  display: none;
+}
+
+.variable-gauge #tidalgauge
+{
+  display: inline;
+}
+
+.variable-sig_wav_ht #year,
+.variable-sig_wav_ht #month,
+.variable-sig_wav_ht #date,
+.variable-sig_wav_ht #latitude,
+.variable-sig_wav_ht #longitude,
+.variable-sig_wav_ht #submit,
+.variable-sig_ht_wnd_sea #year,
+.variable-sig_ht_wnd_sea #month,
+.variable-sig_ht_wnd_sea #date,
+.variable-sig_ht_wnd_sea #latitude,
+.variable-sig_ht_wnd_sea #longitude,
+.variable-sig_ht_wnd_sea #submit,
+.variable-sig_ht_sw1 #year,
+.variable-sig_ht_sw1 #month,
+.variable-sig_ht_sw1 #date,
+.variable-sig_ht_sw1 #latitude,
+.variable-sig_ht_sw1 #longitude,
+.variable-sig_ht_sw1 #submit,
+.variable-pk_wav_per #year,
+.variable-pk_wav_per #month, 
+.variable-pk_wav_per #date,
+.variable-pk_wav_per #latitude,
+.variable-pk_wav_per #longitude,
+.variable-pk_wav_per #submit,
+.variable-wnd_spd #year,
+.variable-wnd_spd #month,
+.variable-wnd_spd #date,
+.variable-wnd_spd #latitude,
+.variable-wnd_spd #longitude,
+.variable-wnd_spd #submit,
+.variable-height #submit,
+.variable-ssta #submit,
+.variable-sst #submit,
+.variable-currents #submit,
+.variable-atlas #submit,
+.variable-atlas #latitude,
+.variable-atlas #longitude,
+.variable-atlas #year,
+.variable-atlas #month,
+.variable-atlas #date,
+.variable-tide #submit,
+.variable-tide #latitude,
+.variable-tide #longitude,
+.variable-tide #year,
+.variable-tide #month,
+.variable-tide #date,
+.variable-Hs.period-monthly #hour,
+.variable-Tm.period-monthly #hour,
+.variable-atlas.period-monthly #period,
+.variable-atlas.period-monthly #dataset,
+.variable-atlas.period-monthly #plottype,
+.variable-tide.period-daily #period,
+.variable-tide.period-daily #dataset,
+.variable-tide.period-daily #plottype
+{
+  display: none;
+}
+
+.variable-sig_wav_ht #hour-slider,
+.variable-sig_ht_wnd_sea #hour-slider,
+.variable-sig_ht_sw1 #hour-slider,
+.variable-pk_wav_per #hour-slider,
+.variable-wnd_spd #hour-slider,
+.variable-height #hour-slider,
+.variable-ssta #hour-slider,
+.variable-sst #hour-slider,
+.variable-currents #hour-slider,
+.variable-Hs.period-hourly #hour,
+.variable-Tm.period-hourly #hour
+{
+  display: block;
+}
+
+.variable-daily #reef,
+.variable-outlook #reef
+{
+  display: inline;
+}
+
+.variable-daily #alertdial
+{
+  display: inline;
+}
+
+.fishery #marine
+{
+  display: inline;
+}
+
+.period-hourly #month,
+.period-hourly #year
+{
+  display: none;
+}

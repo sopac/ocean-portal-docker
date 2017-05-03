@@ -1,0 +1,105 @@
+MAP
+    NAME           "ocean_portal"
+    IMAGETYPE      PNG24
+    SIZE           400 300
+#    SHAPEPATH      "/data/comp/raster"
+    FONTSET        "../fonts/fonts.list"
+
+    PROJECTION
+        "init=epsg:4326"
+    END
+
+    EXTENT         0 -90 360 90
+    UNITS          DD
+
+    WEB
+        METADATA
+            "wms_title"    "Ocean Portal"
+            "wms_onlineresource"    "http://tuscany.bom.gov.au/sheng/cgi/map.py"
+            "wms_srs"   "EPSG:4326"
+            "wms_enable_request"    "*"
+        END
+    END
+
+    LAYER
+        NAME         plot 
+        METADATA
+            "wms_title"    "plot"
+        END
+        DATA         "%base%" 
+        STATUS       ON
+        TYPE         POLYGON
+        VALIDATION
+            'base'     '^/'
+            'plotName' 'shp$'
+        END
+
+        CLASSITEM    "DN"
+
+        CLASS
+            EXPRESSION ([DN]==0)
+
+            STYLE
+                COLOR "#67001f"
+            END
+        END
+
+        CLASS  #color for the continent
+            EXPRESSION ([DN]==5)
+
+            STYLE
+             #   COLOR "#fafafa"
+                COLOR "#969696"
+            END
+        END
+
+        CLASS
+            EXPRESSION ([DN]==42)
+
+            STYLE
+                COLOR "#ca4842"
+            END
+        END
+
+        CLASS
+            EXPRESSION ([DN]==85)
+
+            STYLE
+                COLOR "#f7b799"
+            END
+        END
+
+        CLASS
+            EXPRESSION ([DN]==128)
+
+            STYLE
+                COLOR "#f7f7f7"
+            END
+        END
+
+        CLASS
+            EXPRESSION ([DN]==170)
+
+            STYLE
+                COLOR "#a7d0e4"
+            END
+        END
+
+        CLASS
+            EXPRESSION ([DN]==213)
+
+            STYLE
+                COLOR "#3884bb"
+            END
+        END
+
+        CLASS
+            EXPRESSION ([DN]==255)
+
+            STYLE
+                COLOR "#053061"
+            END
+        END
+
+    END
+END

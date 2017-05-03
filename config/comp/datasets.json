@@ -1,0 +1,335 @@
+[{
+    "id":"reynolds",
+    "name":"Reynolds",
+    "title": "Sea Surface Temperature - Reynolds",
+    "rank": 100,
+    "help": "help/about_OceanTemperature.pdf",
+    "variables": [{
+        "id":"meansst",
+        "bid": "mean",
+        "name":"Mean Temperature",
+        "periods": ["daily", "weekly", "monthly", "3monthly", "6monthly", "12monthly"],
+        "plottypes": ["map"]
+    },{
+        "id":"sstanom",
+        "bid": "anom",
+        "name":"Anomalies",
+        "periods": ["daily", "weekly", "monthly", "3monthly", "6monthly", "12monthly"],
+        "plottypes": ["map"]
+    },{
+        "id":"sstdec",
+        "bid": "dec",
+        "name":"Deciles",
+        "periods": ["monthly", "3monthly", "6monthly", "12monthly"],
+        "plottypes": ["map"]
+    }],
+    "dateRange" : {
+        "minDate": "19810901",
+        "maxDate": "-2"
+    }
+},{
+    "id":"ersst",
+    "name":"ERSST",
+    "title": "Sea Surface Temperature - ERSST",
+    "help": "help/about_OceanTemperature.pdf",
+    "variables": [{
+        "id":"meansst",
+        "bid": "mean",
+        "name":"Mean Temperature",
+        "periods": ["monthly", "3monthly", "6monthly", "12monthly"],
+        "plottypes": ["map"]
+    },{
+        "id":"sstanom",
+        "bid": "anom",
+        "name":"Anomalies",
+        "periods": ["monthly", "3monthly", "6monthly", "12monthly"],
+        "plottypes": ["map"]
+    },{
+        "id":"sstdec",
+        "bid": "dec",
+        "name":"Deciles",
+        "periods": ["monthly", "3monthly", "6monthly", "12monthly"],
+        "plottypes": ["map"]
+    },{
+        "id":"ssttrend",
+        "bid":"trend",
+        "name":"Trend",
+        "periods": ["monthly", "3monthly", "6monthly", "yearly"],
+        "plottypes": ["map"]
+    }],
+    "dateRange" : {
+        "minDate": "19500101",
+        "maxDate": "-1"
+    }
+},{
+    "id":"ww3",
+    "name":"WaveWatch III",
+    "title": "WaveWatch III",
+    "help": "help/about_ww3climate.pdf",
+    "variables": [{
+        "id": "Hs",
+        "name": "Significant Wave Height",
+        "periods": ["hourly", "monthly"],
+        "plottypes": ["map", "histogram" ]
+    }, {
+        "id": "Tm",
+        "name": "Mean Wave Period",
+        "periods": ["hourly", "monthly"],
+        "plottypes": ["map", "histogram"]
+    }, {
+        "id": "Dm",
+        "name": "Mean Wave Direction",
+        "periods": ["monthly"],
+        "plottypes": ["waverose"]
+    }],
+    "dateRange" : {
+        "minDate": "19790101",
+        "maxDate": "20091201"
+    }
+},{
+    "id":"bran",
+    "name":"BRAN",
+    "title": "BRAN 3.5",
+    "rank": 50,
+    "help": "help/about_BRAN.pdf",
+    "variables": [{
+        "id":"meansst",
+        "bid": "temp",
+        "name":"Mean Temperature",
+        "periods": ["monthly", "3monthly", "6monthly", "12monthly"],
+        "plottypes": ["map", "xsections"]
+    }, {
+        "id":"salt",
+        "name":"Salinity",
+        "periods": ["monthly", "3monthly", "6monthly", "12monthly"],
+        "plottypes": ["map", "xsections"]
+    }, {
+        "id":"uv",
+        "name":"Current Speed and Direction",
+        "periods": ["monthly", "3monthly", "6monthly", "12monthly"],
+        "plottypes": ["map"]
+    }],
+    "dateRange" : {
+        "minDate": "19930101",
+        "maxDate": "20120731"
+    }
+}, {
+    "id": "church",
+    "bid": "sealevel",
+    "name":"Church & White",
+    "title": "Church & White",
+    "rank": 100,
+    "help": "help/about_sealevel.pdf",
+    "variables": [{
+        "id":"alt",
+        "name":"Altimetry",
+        "periods": ["monthly"],
+        "plottypes": ["map", "ts"],
+        "dateRange" : {
+            "minDate": "19930101",
+            "maxDate": "20160131"
+        }
+    },{
+        "id":"rec",
+        "name":"Reconstruction",
+        "periods": ["monthly"],
+        "plottypes": ["map", "ts"],
+        "dateRange" : {
+            "minDate": "19500101",
+            "maxDate": "20121201"
+        }
+    }]
+}, {
+    "id": "ntc",
+    "bid": "sealevel",
+    "name": "Sea Level Data",
+    "title": "National Tidal Centre",
+    "help": "help/about_sealevel.pdf",
+    "variables": [{
+        "id":"gauge",
+        "name":"Tide Gauge",
+        "periods": ["monthly"],
+        "plottypes": ["ts"]
+    }]
+}, {
+    "id": "coral",
+    "name": "Coral Reef Watch",
+    "title": "NOAA Coral Reef Watch",
+    "help": "help/about_coralbleaching.pdf",
+    "variables": [{
+        "id":"daily",
+        "name":"Coral Bleaching Alert",
+        "periods": ["daily"],
+        "plottypes": ["map"],
+        "dateRange" : {
+            "minDate": "20130609",
+            "maxDate": "-3"
+        }
+    },{
+        "id":"outlook",
+        "name":"Coral Bleaching Outlook",
+        "periods": ["4weeks", "8weeks", "12weeks"],
+        "plottypes": ["map"]
+    }]
+}, {
+    "id":"ww3forecast",
+    "name":"Global AUSWAVE Forecast",
+    "title": "WaveWatch III Forecast",
+    "help": "help/about_ww3forecasts.pdf",
+    "variables": [{
+        "id": "sig_wav_ht",
+        "name": "Combined Sea and Swell Wave Height",
+        "periods": ["7days"],
+        "plottypes": ["map"]
+    }, {
+        "id": "sig_ht_wnd_sea",
+        "name": "Sea Wave Height",
+        "periods": ["7days"],
+        "plottypes": ["map"]
+    }, {
+        "id": "sig_ht_sw1",
+        "name": "Swell Wave Height",
+        "periods": ["7days"],
+        "plottypes": ["map"]
+    }, {
+        "id": "pk_wav_per",
+        "name": "Peak Wave Period",
+        "periods": ["7days"],
+        "plottypes": ["map"]
+    }, {
+        "id": "wnd_spd",
+        "name": "Wind Speed",
+        "periods": ["7days"],
+        "plottypes": ["map"]
+    }]
+},{
+    "id":"waveatlas",
+    "name":"WACOP",
+    "title": "WACOP",
+    "help": "http://gsd.spc.int/marinecoastalsciencesurvey/wacop",
+    "variables": [{
+        "id": "atlas",
+        "name": "Wave Atlas",
+        "periods": ["monthly"],
+        "plottypes": ["map"]
+    }]
+}, {
+    "id":"msla",
+    "name": "Near Real Time Sea Level",
+    "title": "Near Real Time Sea Level",
+    "help": "help/about_AVISO_Sea_Level.pdf",
+    "variables": [{
+        "id": "sla",
+        "name": "Sea Level Anomaly",
+        "periods": ["daily", "monthly"],
+        "plottypes": ["map"],
+        "dateRange" : {
+            "minDate": "20150706",
+            "maxDate": "-2"
+        }
+    }]    
+}, {
+    "id":"tideforecast",
+    "name":"Tide calendar",
+    "title": "Tide calendar",
+    "help": "http://www.bom.gov.au/australia/tides/#!/offshore",
+    "variables": [{
+        "id": "tide",
+        "name": "Tide Forecast",
+        "periods": ["daily"],
+        "plottypes": ["map"]
+    }]
+}, {
+    "id":"poamasla",
+    "name":"Seasonal Sea Level Forecast",
+    "title": "Seasonal Sea Level Forecast",
+    "help": "help/about_POAMA_Sea_Level.pdf",
+    "variables": [{
+        "id": "height",
+        "name": "Sea Level Anomaly",
+        "periods": ["seasonal"],
+        "plottypes": ["map"]
+    }]
+}, {
+    "id":"poamassta",
+    "name":"Seasonal Sea Surface Temperature Forecast",
+    "title": "Seasonal Sea Surface temperature Forecast",
+    "help": "help/about_POAMA_SST.pdf",
+    "variables": [{
+        "id": "ssta",
+        "name": "Sea Surface Temperature Anomaly",
+        "periods": ["seasonal"],
+        "plottypes": ["map"]
+    }, {
+        "id": "sst",
+        "name": "Sea Surface Temperature",
+        "periods": ["seasonal"],
+        "plottypes": ["map"]
+    }]
+}, {
+    "id":"currentforecast",
+    "name":"Forecast Surface Currents",
+    "title": "Ocean Currents",
+    "help": "help/about_currents.pdf",
+    "variables": [{
+        "id": "currents",
+        "name": "Current Speed and Direction",
+        "periods": ["3days"],
+        "plottypes": ["map"]
+    }]
+}, {
+    "id":"chlorophyll",
+    "name":"Chlorophyll Mass Concentration",
+    "title": "Chlorophyll Mass Concentration",
+    "help": "help/about_chlorophyll.pdf",
+    "variables": [{
+        "id": "chldaily",
+        "name": "Daily",
+        "periods": ["daily"],
+        "plottypes": ["map"],
+        "dateRange" : {
+            "minDate": "-8",
+            "maxDate": "-2"
+        }
+    }, {
+        "id": "chlmonthly",
+        "name": "Monthly",
+        "periods": ["monthly"],
+        "plottypes": ["map"],
+        "dateRange" : {
+            "minDate": "20150101",
+            "maxDate": "-1m-20"
+        }
+    }]
+}, {
+    "id":"convergence",
+    "name":"Reynolds",
+    "title": "Sea Surface Temperature - Reynolds",
+    "help": "help/about_OceanTemperature.pdf",
+    "variables": [{
+        "id":"mean",
+        "name":"Mean Temperature",
+        "periods": ["daily"],
+        "plottypes": ["map"]
+    }],
+    "dateRange" : {
+        "minDate": "19810901",
+        "maxDate": "-2"
+    }
+}, {
+    "id":"mur",
+    "name":"High Resolution SST & Fronts",
+    "title": "MUR High Resolution SST",
+    "help": "help/about_MUR_Fronts.pdf",
+    "variables": [{
+        "id":"mursst",
+        "name":"Sea Surface Temperature",
+        "periods": ["daily"],
+        "plottypes": ["map"]
+    }],
+    "dateRange" : {
+        "minDate": "-8",
+        "maxDate": "-2"
+    }
+}
+]

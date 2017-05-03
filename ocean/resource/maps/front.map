@@ -1,0 +1,64 @@
+MAP
+    NAME           "ocean_portal"
+    IMAGETYPE      PNG24
+    SIZE           400 300
+#    SHAPEPATH      "/data/comp/raster"
+    FONTSET        "../fonts/fonts.list"
+
+    PROJECTION
+        "init=epsg:4326"
+    END
+
+    EXTENT         -180 -90 180 90 
+    UNITS          DD
+
+    WEB
+        METADATA
+            "wms_title"    "Ocean Portal"
+            "wms_onlineresource"    "http://tuscany.bom.gov.au/sheng/cgi/map.py"
+            "wms_srs"   "EPSG:4326"
+            "wms_enable_request"    "*"
+        END
+    END
+
+    SYMBOL
+        NAME "dash"
+        TYPE vector 
+        POINTS
+            0 0.5
+            1 0.5
+        END
+    END
+
+    SYMBOL
+        NAME "circle"
+        TYPE ellipse
+        POINTS
+            1 1
+        END
+    END
+
+    LAYER
+        NAME         plot
+        METADATA
+            "wms_title"    "plot"
+        END
+        DATA         "%base%"
+        STATUS       ON
+        TYPE         POINT
+        VALIDATION
+            'base'     '^/'
+            'plotName' 'shp$'
+        END
+
+        CLASS
+            STYLE
+                SYMBOL     'circle'
+                COLOR      0 0 0
+                SIZE       1
+            END
+        END
+    END
+
+
+END

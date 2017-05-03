@@ -1,0 +1,111 @@
+/*
+ * (c) 2012 Commonwealth of Australia
+ * Australian Bureau of Meteorology, COSPPac COMP
+ * All Rights Reserved
+ */
+
+#regionPanel {
+  margin-top: 2px;
+}
+
+#mapControls {
+  margin: -1px;
+  padding: 2px;
+}
+
+#mapControls .layersDiv {
+  padding: 3px;
+}
+
+#mapControls .layersDiv .labelSpan {
+  padding-left: 3px;
+}
+
+#mapControlsToolbar {
+  position: absolute;
+  top: 24px;
+  right: 6px !important;
+}
+
+.dataLbl, .dataLayersDiv, .baseLbl {
+  /* hide the data layers from the layer switcher */
+  display: none;
+}
+
+.version {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 8pt;
+  padding: 1px;
+  margin: 0;
+}
+
+form {
+  width: 100%;
+}
+
+optgroup {
+  font-style: normal;
+  padding: 1px;
+}
+
+optgroup option {
+  padding-left: 10px;
+}
+
+.controlgroup {
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-bottom: 0;
+}
+
+.controlgroup .hint {
+  font-size: smaller;
+  padding: 3px;
+}
+
+.controlvar {
+  width: 100%;
+}
+
+.controlvar .label,
+.controlvar label {
+  display: inline-block;
+  text-align: right;
+  white-space: nowrap;
+  width: 100px;
+  padding-right: 3px;
+  color: #222222;
+}
+/*
+.controlvar .field {
+  width: 131px;
+}
+
+.controlvar .widefield {
+  width: 192px; /* .label + .field */
+/*  margin-top: 3px;
+}
+
+.controlvar select,
+.controlvar input {
+  font-size: 12px;
+}
+
+.controlvar .field:focus,
+.controlvar .widefield:focus {
+  box-shadow: 0 0 2px 1px orange;
+}*/
+
+
+.datepick-popup {
+  /* this is important because else the style overrides it*/ 
+  z-index: 1050 !important;
+}
+
+input[disabled] + label {
+  color: #cccccc;
+}
+

@@ -1,0 +1,10 @@
+userpass
+.*.sw?
+*~
+*.pyc
+*.pyo
+/MANIFEST
+/MANIFEST.in
+/dist/
+/build/
+/.coverage

@@ -1,0 +1,45 @@
+/**
+ * Dragdealer.js 0.9.8
+ * http://github.com/skidding/dragdealer
+ *
+ * (c) 2010+ Ovidiu Chereche.
+ * http://skidding.mit-license.org
+ */
+
+.dragdealer {
+  position: relative;
+  height: 50px;
+  background: #EEE;
+}
+.dragdealer .handle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+.dragdealer .red-bar {
+  width: 100px;
+  height: 60px;
+  color: #FFF;
+  font-size: 14px;
+  line-height: 20px;
+  padding-top: 5px;
+  text-align: center;
+}
+.red-bar {
+  background: #165C7D;
+}
+.handle-text {
+  display: table-cell;
+  vertical-align: middle;
+}
+.dragdealer .disabled {
+  background: #898989;
+}
+
+.glyphicon {
+margin-top: 5px;
+margin-right: 10px;
+font-size: 18px;
+cursor:pointer;
+}

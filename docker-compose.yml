@@ -1,0 +1,20 @@
+
+version: "3"
+services:
+  oceanportal:
+    build:
+      context: .
+    hostname: oceanportal
+    ports:
+      - "0.0.0.0:80:80"
+    # Uncomment and adapt this if you are using a jwilder/nginx-proxy
+    #environment:
+    #  - VIRTUAL_HOST=sub.domain.com
+    volumes:
+    - .:/ocean-portal
+    - ./data:/opt/data
+    #restart: on-failure:5
+    user: root
+    #command: mkdir -p /opt/ocean-portal && python setup.py install --root=/opt/ocean-portal/
+    
+    

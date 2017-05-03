@@ -1,0 +1,32 @@
+{
+    "climate": {
+        "datasets": ["reynolds", "ersst", "ww3", "bran", "waveatlas"],
+        "vargroups": ["sst", "salt", "waves", "currents", "chlomonthly"],
+        "title": "Ocean Monitoring"
+    },
+    "sealevel": {
+        "datasets": ["reynolds", "ersst", "ww3", "bran", "tideforecast"],
+        "vargroups": ["sealevel", "ww3forecast", "poamasla", "msla"],
+        "title": "Sea Level"
+    },
+    "coral": {
+        "datasets": [],
+        "vargroups": ["crw", "chlodaily", "poamassta"],
+        "title": "Coral Reefs"
+    },
+    "tour": {
+        "datasets": [],
+        "vargroups": ["ww3forecast"],
+        "title": "Tourism"
+    },
+    "shipping": {
+        "datasets": [],
+        "vargroups": ["ww3forecast", "currentforecast"],
+        "title": "Shipping"
+    },
+    "fishery": {
+        "datasets": [],
+        "vargroups": ["poamasst", "chlodaily", "convergence"],
+        "title": "Fisheries"
+    }
+}
