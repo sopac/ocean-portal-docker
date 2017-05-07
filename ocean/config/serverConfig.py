@@ -37,7 +37,7 @@ class default(BaseConfig):
     dataDir = {}
 
     mapservPath = '/usr/lib/cgi-bin/mapserv'
-    debug = False
+    debug = True
     profile = False
 
 class localhost(default):

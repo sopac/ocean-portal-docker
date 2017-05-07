@@ -23,7 +23,8 @@ import numpy.ma as ma
 
 import numpy as np
 from matplotlib import pyplot as plt
-from matplotlib import mpl
+#from matplotlib import mpl
+import matplotlib as mpl
 from matplotlib.offsetbox import AnchoredOffsetbox, TextArea
 from matplotlib.transforms import offset_copy
 from mpl_toolkits.basemap import Basemap

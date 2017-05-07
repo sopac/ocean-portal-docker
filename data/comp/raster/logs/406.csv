@@ -1,0 +1,4 @@
+# /opt/ocean-portal/var/www/cgi-bin/portal/portal.py instance started Sun May  7 23:38:10 2017
+2017-05-07T23:38:11.941272,-START-
+2017-05-07T23:38:12.038190,Parsing,"{'plot': 'map', 'area': 'fiji', 'period': '7days', 'dataset': 'ww3forecast', 'variable': 'sig_ht_wnd_sea', 'step': 'NaN', 'date': datetime.date(2017, 5, 8)}"
+2017-05-07T23:38:12.038507,Process,ww3forecast

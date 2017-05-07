@@ -2,7 +2,101 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="aef71737-5d27-4e9e-8821-b921c6896b8d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/01d61e07888fc5e13cdf458935aa7ad2677ebc9fbd51b0e3526598865d882afd.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/01d61e07888fc5e13cdf458935aa7ad2677ebc9fbd51b0e3526598865d882afd.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/01ed41c449027db44a86954673ffae11fd2f12439ff1d2d8a38c7a6fa0e7d635.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/01ed41c449027db44a86954673ffae11fd2f12439ff1d2d8a38c7a6fa0e7d635.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/0653ff91f1b0d678bbb3d469fd4d8e5fc8cd575a10126d23e2ac5278ff99cfac.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/0653ff91f1b0d678bbb3d469fd4d8e5fc8cd575a10126d23e2ac5278ff99cfac.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/09040b6ff36119757148d045d5b5e6d791c47782403ac58cbb34b224ab055c4a.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/09040b6ff36119757148d045d5b5e6d791c47782403ac58cbb34b224ab055c4a.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/0a385b3fbf447390ee7a3a3e1c5f0c94fbe144f61b151b896a471d813f77af9e.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/0a385b3fbf447390ee7a3a3e1c5f0c94fbe144f61b151b896a471d813f77af9e.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/0b31a8756832b3d3cdcf6050ff8f9b702850372c21a97805602ed749b6cdacd0.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/0b31a8756832b3d3cdcf6050ff8f9b702850372c21a97805602ed749b6cdacd0.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/0c48c0c1e02cd11d3cad6d7a655dc49a3a1053dd2012511590d713eba40bf939.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/0c48c0c1e02cd11d3cad6d7a655dc49a3a1053dd2012511590d713eba40bf939.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/0e54706ecbab01c701e6f0721c984b09c3a32140878a6d3a69367deaf44cbb9a.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/0e54706ecbab01c701e6f0721c984b09c3a32140878a6d3a69367deaf44cbb9a.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/135a489381a7d9ded00ffd9770d1f497a446512ecce01799daa068c3d80da278.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/135a489381a7d9ded00ffd9770d1f497a446512ecce01799daa068c3d80da278.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/1a8026df5917ece5883474281bf2a034047d9392c9dc67a58127d52ec6a9664a.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/1a8026df5917ece5883474281bf2a034047d9392c9dc67a58127d52ec6a9664a.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/1cffe71d7f29aeba15244bd132411292701005c5c0108b4e86756ca611eba51e.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/1cffe71d7f29aeba15244bd132411292701005c5c0108b4e86756ca611eba51e.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/217a7aaf8e9baffb6161862dd8a45e40a7ae2e97348f7bb1862cc65119a98ed1.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/217a7aaf8e9baffb6161862dd8a45e40a7ae2e97348f7bb1862cc65119a98ed1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/2678edce3e6df06c473f93ca844f194fc786bc16a86fa7cd15b7df0b0df9f41b.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/2678edce3e6df06c473f93ca844f194fc786bc16a86fa7cd15b7df0b0df9f41b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/28dd43b519670de22e8475d6ee75c3f7c4458a70d89a77c75e4f8453ae8c9752.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/28dd43b519670de22e8475d6ee75c3f7c4458a70d89a77c75e4f8453ae8c9752.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/2a7581c077f04e671c8e4f9c0519101a79ee634e54658ad658c0859310f43356.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/2a7581c077f04e671c8e4f9c0519101a79ee634e54658ad658c0859310f43356.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/2d7a68119389a024a79473cf72b37512fbd365f7016405390d64a4879118ab22.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/2d7a68119389a024a79473cf72b37512fbd365f7016405390d64a4879118ab22.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/33f1b7a0b86dcb1f536151fbac6dc193e22b9399155ba16fb95318159c4477cb.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/33f1b7a0b86dcb1f536151fbac6dc193e22b9399155ba16fb95318159c4477cb.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/353d0cdd1075facc2da50b42f9f13c82a1d3affc9fe8ff30d9f58b2b76136741.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/353d0cdd1075facc2da50b42f9f13c82a1d3affc9fe8ff30d9f58b2b76136741.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/3568318dcab8cbef483bba14bc0920072a4408851c9b637c9a23e13043ae2169.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/3568318dcab8cbef483bba14bc0920072a4408851c9b637c9a23e13043ae2169.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/35c81c10be973f84371fa1448f8621aebd7fad13cbfbc85eac2bb300f42a6f57.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/35c81c10be973f84371fa1448f8621aebd7fad13cbfbc85eac2bb300f42a6f57.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/371d883df57402060fb57d3479fe2a93d899468b4a2ec499c9bf6718a4b079bd.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/371d883df57402060fb57d3479fe2a93d899468b4a2ec499c9bf6718a4b079bd.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/38acb6253558dcd0844854b2e4aec650959da0ee647e39a2b8ebd19d8541f38e.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/38acb6253558dcd0844854b2e4aec650959da0ee647e39a2b8ebd19d8541f38e.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/3a7c601dc215265ceb6123d31ff31f59c8481f7fbc57dd4ca1ff24ee4897c76f.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/3a7c601dc215265ceb6123d31ff31f59c8481f7fbc57dd4ca1ff24ee4897c76f.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/3ba8287960f89707ef4b70201bb10486291bae048b49424ab37f25f0c50004a5.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/3ba8287960f89707ef4b70201bb10486291bae048b49424ab37f25f0c50004a5.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/3e3d456317930bf588f63c05856e2c0308ea91a96b35f54e2c17c28ba384d6d2.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/3e3d456317930bf588f63c05856e2c0308ea91a96b35f54e2c17c28ba384d6d2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/402e6697a1958205a5b055f434b9a38ac96318b2c5af84213ca7a19233af5ded.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/402e6697a1958205a5b055f434b9a38ac96318b2c5af84213ca7a19233af5ded.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/409a44246608d247e08100441939f2fba6b7b7840ee9b2571f402e9fa40f64c9.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/409a44246608d247e08100441939f2fba6b7b7840ee9b2571f402e9fa40f64c9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/40b9b4882c90ee37ef066cdae112bfee6464bf1e6e6e4df242701978bbb0b306.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/40b9b4882c90ee37ef066cdae112bfee6464bf1e6e6e4df242701978bbb0b306.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/41f00dd0203d4171c5c657c0080fbd7c5a8c7cc367b7a9d98f57b8f5d22a3fa8.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/41f00dd0203d4171c5c657c0080fbd7c5a8c7cc367b7a9d98f57b8f5d22a3fa8.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/42a22cc5ccfb449b269f814e2738f4e3e49d40f6f6de10922252b563fe1598a2.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/42a22cc5ccfb449b269f814e2738f4e3e49d40f6f6de10922252b563fe1598a2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/450c7a93065e8ec98e2a10d5034c8ddca89f3f89369d4a00fbe3ecd6b527b407.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/450c7a93065e8ec98e2a10d5034c8ddca89f3f89369d4a00fbe3ecd6b527b407.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/48d6aafc1f7c41a01069cf5c638c87a7feb2ff2ef0edcc653e3dc8ff67cdec86.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/48d6aafc1f7c41a01069cf5c638c87a7feb2ff2ef0edcc653e3dc8ff67cdec86.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/4ea671b7af286d551b0fb7efaac5e5c1c987b7b1cdab38bbc7bfe86414749dcf.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/4ea671b7af286d551b0fb7efaac5e5c1c987b7b1cdab38bbc7bfe86414749dcf.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/52f3829f3110bb248925a432f1e383491339a246936090b7cbb393fe93cc0520.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/52f3829f3110bb248925a432f1e383491339a246936090b7cbb393fe93cc0520.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/536683bbe15a1a01f0db2fa567d0a63a65f532188bcef5ebc5906eec0f201faf.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/536683bbe15a1a01f0db2fa567d0a63a65f532188bcef5ebc5906eec0f201faf.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/56531e2f02ecf768f2856cf250923db732450797c773bce071d7c47555fff2d9.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/56531e2f02ecf768f2856cf250923db732450797c773bce071d7c47555fff2d9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/6336314f0a3d07ad2734a4fa6202fd0e611b2ff41c34f5dd02992b023c0fe7a0.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/6336314f0a3d07ad2734a4fa6202fd0e611b2ff41c34f5dd02992b023c0fe7a0.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/673e7ba3b211ccf44356202fe08b7c00662e4ecccf1a660d5d50e55c0dfa27b5.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/673e7ba3b211ccf44356202fe08b7c00662e4ecccf1a660d5d50e55c0dfa27b5.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/69c02c33b7a2a816691f326e08780ad4c2171ff994349c812b304bf83cd75878.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/69c02c33b7a2a816691f326e08780ad4c2171ff994349c812b304bf83cd75878.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/6afada7822bc7631e2431e50c6fba8a339ee814fd21f9dce8db73f969aee7062.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/6afada7822bc7631e2431e50c6fba8a339ee814fd21f9dce8db73f969aee7062.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/6bf6f147ff50ac3e3af011ee20b1a45e21c4210bbcad6dbf752a65d26d9b4457.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/6bf6f147ff50ac3e3af011ee20b1a45e21c4210bbcad6dbf752a65d26d9b4457.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/6ff19e650fda3040c1fde549bc7d82e17921c38f0a749667b1888f63902d1027.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/6ff19e650fda3040c1fde549bc7d82e17921c38f0a749667b1888f63902d1027.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/78e0acdc02bed0918590178caf57958d0289572d2ffa85d23e2fd6a65ee27ff4.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/78e0acdc02bed0918590178caf57958d0289572d2ffa85d23e2fd6a65ee27ff4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/7b444de59715b6d2ad2c15e2304df590ef9ed55e73dff72483afd3047e3a2494.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/7b444de59715b6d2ad2c15e2304df590ef9ed55e73dff72483afd3047e3a2494.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/7ee2f2e1a760d0d44f14d6b4f8a990527e6bc2e1fc6ea945433579ff4c721ab5.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/7ee2f2e1a760d0d44f14d6b4f8a990527e6bc2e1fc6ea945433579ff4c721ab5.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/83b18a1fed6fb3e362595a9cdf00985fba6d64ad9ea5cab8e6b03e93a8dc3463.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/83b18a1fed6fb3e362595a9cdf00985fba6d64ad9ea5cab8e6b03e93a8dc3463.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/865c7de5d11c82f31b85cc0fbfd88bac1f2c616912cb1bab5ff329cc6a53ad52.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/865c7de5d11c82f31b85cc0fbfd88bac1f2c616912cb1bab5ff329cc6a53ad52.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/89b6917a53589b44789613e59b1f28a05c98ea55af8bd5513312372b5dbab674.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/89b6917a53589b44789613e59b1f28a05c98ea55af8bd5513312372b5dbab674.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/8acfa1c82687357cc4df228b23f429db633be2ee17ed2bd9186d15d584371c8d.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/8acfa1c82687357cc4df228b23f429db633be2ee17ed2bd9186d15d584371c8d.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/8cb8103f1dcc96964d59aaf13bf1cf0a9ffbcdef81d2eb848121a0c5bdc6a1cc.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/8cb8103f1dcc96964d59aaf13bf1cf0a9ffbcdef81d2eb848121a0c5bdc6a1cc.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/8da3d9d42e4beb24fabc378d0baa168e77e20e58a56ba2581d17e99375979064.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/8da3d9d42e4beb24fabc378d0baa168e77e20e58a56ba2581d17e99375979064.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/8fc58575b81ea87c6a97ce4ad7ee430db5ecf66e0e082c89d7aa7e98bf3f246a.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/8fc58575b81ea87c6a97ce4ad7ee430db5ecf66e0e082c89d7aa7e98bf3f246a.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/91acb6ae2fa21c11302c0ef105960ae5767b3329e741f8c2394f907c138722e4.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/91acb6ae2fa21c11302c0ef105960ae5767b3329e741f8c2394f907c138722e4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/95b2528e78536a4435d0053ef2c6437762b2fc72e28279ea6cd02d02f596b520.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/95b2528e78536a4435d0053ef2c6437762b2fc72e28279ea6cd02d02f596b520.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/98c0a74a50269714c71baf376933daabfa425e9bba728f8f606539c3273bac57.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/98c0a74a50269714c71baf376933daabfa425e9bba728f8f606539c3273bac57.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/98df391721ee97071078a4afb03f3f6e6c3a44f2b6718cf147172fe2db146dc1.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/98df391721ee97071078a4afb03f3f6e6c3a44f2b6718cf147172fe2db146dc1.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/999d56f3c305c2ef51929246d9d11ae8b3b56960a9c7f7af7e1cec27e02c2d5b.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/999d56f3c305c2ef51929246d9d11ae8b3b56960a9c7f7af7e1cec27e02c2d5b.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/99ecdbdb0112fd4bad6ffe764f8e394461c7fada596433831dc38930b8e9fe24.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/99ecdbdb0112fd4bad6ffe764f8e394461c7fada596433831dc38930b8e9fe24.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/9fc01a2861ffeb2bb54dd1f5bde56d49bcb8e82f245d89109374c87ba369046a.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/9fc01a2861ffeb2bb54dd1f5bde56d49bcb8e82f245d89109374c87ba369046a.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/9fed3ab921f94d10f8402ba1c86c10c4d403bb022e270d9a63d32ef3265b94a6.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/9fed3ab921f94d10f8402ba1c86c10c4d403bb022e270d9a63d32ef3265b94a6.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/a3e8cf1c3311b75906989c7332f121e0c6a3d78158deacdbd2177f86679bc310.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/a3e8cf1c3311b75906989c7332f121e0c6a3d78158deacdbd2177f86679bc310.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/a5c89ecbb60c210ff3c0bcdcecda13db1abb3db005d69b3ecbe34230d8d1c695.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/a5c89ecbb60c210ff3c0bcdcecda13db1abb3db005d69b3ecbe34230d8d1c695.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/a69dbe281e4c75b7a69b69130f8fae36627a040ef5b5a0fedeee4e7e21bea310.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/a69dbe281e4c75b7a69b69130f8fae36627a040ef5b5a0fedeee4e7e21bea310.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/b4937bde5b9817d14e04f8d1557e1abc2416504dfa8fca3f60bcd5e53587f7b7.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/b4937bde5b9817d14e04f8d1557e1abc2416504dfa8fca3f60bcd5e53587f7b7.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/b79dea280916e65aa1ecee827abae0f1647e731dad99b95b1ec7f62ca553bdce.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/b79dea280916e65aa1ecee827abae0f1647e731dad99b95b1ec7f62ca553bdce.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/ba11c486e848a3acca584f7c36588d9b40fb2fa8ec19e46fb00bd1a9afff847e.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/ba11c486e848a3acca584f7c36588d9b40fb2fa8ec19e46fb00bd1a9afff847e.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/baa0d6394c67aa96d5452b31eb2b91a1a0d18d8c45190cd8eda80f85f7b6be3f.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/baa0d6394c67aa96d5452b31eb2b91a1a0d18d8c45190cd8eda80f85f7b6be3f.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/bb864c688ad5309e9feefc5e15ed5c8d42186d2ba57dce0003a6b29684d01fc4.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/bb864c688ad5309e9feefc5e15ed5c8d42186d2ba57dce0003a6b29684d01fc4.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/c223f7a5344a22baafb41e0ed021ffb2e230ad5bf49e1983faa44ec8127d6cae.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/c223f7a5344a22baafb41e0ed021ffb2e230ad5bf49e1983faa44ec8127d6cae.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/d22388d63dc9d1319b4c2e426e81d570dd21c324f566feb17dc0e490bff5c0cc.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/d22388d63dc9d1319b4c2e426e81d570dd21c324f566feb17dc0e490bff5c0cc.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/d4f66af50c9ebecdf15534270b1477e162d9bd5a66ed2db23af27e2bc67a8ed9.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/d4f66af50c9ebecdf15534270b1477e162d9bd5a66ed2db23af27e2bc67a8ed9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/d6a9cfbd341077877cc178c574630d4654b275953b520930864ad6c0d571ad57.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/d6a9cfbd341077877cc178c574630d4654b275953b520930864ad6c0d571ad57.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/ddd8e995af6ed84ed05694a4be18d036327bf85f348cdb893e7de52d90bc5cdd.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/ddd8e995af6ed84ed05694a4be18d036327bf85f348cdb893e7de52d90bc5cdd.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/df873a18524ec20f31d8babc0269215e5ccfe5d99d7ec68d82060801a870c92c.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/df873a18524ec20f31d8babc0269215e5ccfe5d99d7ec68d82060801a870c92c.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/e265786197f5a4c5ea194b6877a006ca48f12fefe711e34e9ef4b8ee984f7aaf.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/e265786197f5a4c5ea194b6877a006ca48f12fefe711e34e9ef4b8ee984f7aaf.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/e2c1873fbfc43aa8350d90c5f0246d6756c0fa8be8ea9d5220222abfac8048b7.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/e2c1873fbfc43aa8350d90c5f0246d6756c0fa8be8ea9d5220222abfac8048b7.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/e2e88ecda256abc0247e277edf2f2276f1a54bf7c549b530725b441de48c1e04.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/e2e88ecda256abc0247e277edf2f2276f1a54bf7c549b530725b441de48c1e04.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/e9074ab89a0673c6b100642871254f21f4b693bfb20bfb4ee2f8fe9fcce697b7.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/e9074ab89a0673c6b100642871254f21f4b693bfb20bfb4ee2f8fe9fcce697b7.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/e92bbc491b98dae7e027a5faef1b8e11ba8ec217d7ae3279df003de86e08f706.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/e92bbc491b98dae7e027a5faef1b8e11ba8ec217d7ae3279df003de86e08f706.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/eb83333ccdd36cd49b388d37d74dfe7b9d19f3753dea5da617ee529ad0cae1f9.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/eb83333ccdd36cd49b388d37d74dfe7b9d19f3753dea5da617ee529ad0cae1f9.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/ec3f8671122f22b243aaa56b387a5bef6fa2aea10670f6d9831e1a390bb3caa2.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/ec3f8671122f22b243aaa56b387a5bef6fa2aea10670f6d9831e1a390bb3caa2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/f048a927d7cbdf44cbd2c31775d119ec5b009f95271184f5a4f0a86e861e35c2.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/f048a927d7cbdf44cbd2c31775d119ec5b009f95271184f5a4f0a86e861e35c2.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/f183c5510c8d4f1e98c3b8866dddda6fb6822d241020523dd06ebcbf5ac22578.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/f183c5510c8d4f1e98c3b8866dddda6fb6822d241020523dd06ebcbf5ac22578.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/f8a209b9cf8db1bdece0ab1897f2a95c6e866e6927a804405b9dbad4dd7e5463.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/f8a209b9cf8db1bdece0ab1897f2a95c6e866e6927a804405b9dbad4dd7e5463.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/fdba6a16335732c3b6469a8a586bdd330fcff45d699f33549b965ef6c8272945.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/fdba6a16335732c3b6469a8a586bdd330fcff45d699f33549b965ef6c8272945.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/maptiles/fdce8d891a369c74fd15e28950a320cc0c1b6008fea84a6d2899c43370747626.png" afterPath="$PROJECT_DIR$/data/comp/raster/maptiles/fdce8d891a369c74fd15e28950a320cc0c1b6008fea84a6d2899c43370747626.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/logs/212.csv" afterPath="$PROJECT_DIR$/data/comp/raster/logs/212.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/logs/215.csv" afterPath="$PROJECT_DIR$/data/comp/raster/logs/215.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/logs/3483.csv" afterPath="$PROJECT_DIR$/data/comp/raster/logs/3483.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/logs/3486.csv" afterPath="$PROJECT_DIR$/data/comp/raster/logs/3486.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/logs/3500.csv" afterPath="$PROJECT_DIR$/data/comp/raster/logs/3500.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data/comp/raster/logs/3503.csv" afterPath="$PROJECT_DIR$/data/comp/raster/logs/3503.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ocean/config/serverConfig.py" afterPath="$PROJECT_DIR$/ocean/config/serverConfig.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ocean/plotter/plotter.py" afterPath="$PROJECT_DIR$/ocean/plotter/plotter.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,7 +107,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="ocean-portal.conf" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ocean-portal.conf">
           <provider selected="true" editor-type-id="text-editor">
@@ -27,11 +121,9 @@
       <file leaf-file-name="plotter.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/ocean/plotter/plotter.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-374">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <element signature="e#330#339#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="520">
+              <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -39,7 +131,7 @@
       <file leaf-file-name="productName.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ocean/config/productName.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-55">
+            <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
@@ -121,6 +213,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/ocean/plotter/plotter.py" />
+      </list>
+    </option>
+  </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
@@ -150,7 +249,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -233,7 +332,7 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -360,6 +459,12 @@
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="js.build_tools.npm" factoryName="npm">
@@ -426,22 +531,22 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -459,11 +564,90 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Dockerfile">
+    <entry file="file://$PROJECT_DIR$/ocean-portal.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocean/config/productName.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/comp/datasets.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/comp/app.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/comp/portals.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/comp/tidalGauges.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/comp/tidegauges.geojson">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/comp/vargroups.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docker-compose.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ocean/plotter/plotter.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -485,7 +669,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ocean/config/productName.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-55">
+        <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
@@ -541,11 +725,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/ocean/plotter/plotter.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-374">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#330#339#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="520">
+          <caret line="26" column="24" lean-forward="false" selection-start-line="26" selection-start-column="24" selection-end-line="26" selection-end-column="24" />
+          <folding />
         </state>
       </provider>
     </entry>
