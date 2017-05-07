@@ -9,3 +9,5 @@ userpass
 /build/
 /.coverage
 *.odt
+/data/maptiles/*.png
+/data/comp/raster/logs/*.csv
