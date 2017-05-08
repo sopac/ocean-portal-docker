@@ -23,7 +23,7 @@ class default(BaseConfig):
     baseURL = '/portal/'
 
     # relative path to rasters
-    rasterURL = 'raster/'
+    rasterURL = 'comp/raster/'
 
     # path on disk to output rasters/caches
     outputDir = '/opt/data/comp/raster/'
