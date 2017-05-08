@@ -1309,7 +1309,7 @@ function _getUpdatedMonth(){
  * http://tuscany/redmine/issues/964
  */
 function updateApplicationTitle(){
-    base_name = 'Ocean Portal';
+    base_name = 'Pacific Ocean Portal';
 
     $.getJSON("config/comp/app.json", function( data ) {
         app_name = window.location.hash.split('#')[1];
