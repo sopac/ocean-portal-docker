@@ -12,7 +12,8 @@ import os
 import numpy.ma as ma
 import numpy as np
 from matplotlib import pyplot as plt
-from matplotlib import mpl
+#from matplotlib import mpl
+import matplotlib as mpl
 from mpl_toolkits.basemap import Basemap
 from matplotlib.offsetbox import AnchoredOffsetbox, TextArea
 
