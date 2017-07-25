@@ -119,8 +119,8 @@ class Calculate_MultiMonth_Averages():
         Calculate multi-month averages for the dataset specified by the input argument.
         """
 
-        self.ncea_path = '/srv/map-portal/usr/bin/ncea'
-        self.ncflint_path = '/srv/map-portal/usr/bin/ncflint'
+        self.ncea_path = '/usr/bin/ncea'
+        self.ncflint_path = '/usr/bin/ncflint'
 
         # Settings for each dataset
         settings = self.config[dataset]
@@ -242,7 +242,9 @@ class Calculate_MultiMonth_Averages():
 
         # Average scaled files
         scaled_avg_filename = os.path.join(temp_dir, 'tmp_scaledavg.nc')
-        cmd = self.ncea_path + ' -O ' + ' '.join(scaled_files) + ' ' + scaled_avg_filename
+        #cmd = self.ncea_path + ' -O ' + ' '.join(scaled_files) + ' ' + scaled_avg_filename
+        cmd = self.ncea_path + ' -O -x -v anom,err ' + ' '.join(scaled_files) + ' ' + scaled_avg_filename       
+        #print cmd
         proc = subprocess.call(cmd, shell=True)
 
         # Scale result by N / days in period
@@ -288,3 +290,5 @@ class Calculate_MultiMonth_Averages():
         # Reverse list so dates are in chronological order
         datelist = datelist[::-1]
         return datelist
+
+__version__ = ''

@@ -154,10 +154,11 @@ class Calculate_Weekly_Averages():
             if not os.path.exists(output_dir):
                 os.makedirs(output_dir)
 
-        ncea_path = '/srv/map-portal/usr/bin/ncea'
+        ncea_path = '/usr/bin/ncea'
         if settings.has_key('use_old_version_of_ncea'):
             if settings['use_old_version_of_ncea']:
-                ncea_path = '/srv/map-portal/usr/bin/ncea'
+                #ncea_path = '/srv/map-portal/usr/bin/ncea'
+                ncea_path = '/usr/bin/ncea'
 
         if 'processing_settings' in settings:
             ncea_settings = settings['processing_settings'] + ' '
@@ -165,3 +166,5 @@ class Calculate_Weekly_Averages():
             ncea_settings = ''
         cmd = ncea_path + ' -O ' + ncea_settings + ' '.join(input_files) + ' ' + output_file_fullpath
         proc = subprocess.call(cmd, shell=True)
+
+__version__ = ''

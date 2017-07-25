@@ -45,19 +45,19 @@ class localhost(default):
     mapservPath = '/usr/lib/cgi-bin/mapserv'
     dataDir = {
         'bran': '/opt/data/blue_link/data/',
-        'ersst': '/opt/data/sst/ersst/data/',
-        'reynolds': '/opt/data/sst/reynolds/',
+        'ersst': '/opt/data/ersst/',
+        'reynolds': '/opt/data/reynolds/',
         'sealevel': '/opt/data/sea_level/',
         'msla': '/opt/data/sea_level/',
         'ww3': '/opt/data/wavewatch3/',
-        'coral':'/opt/data/sst/coral/',
+        'coral':'/opt/data/coral/',
         'poamasla':'/opt/data/poama/',
         'poamassta':'/opt/data/poama/',
         'oceanmaps':'/opt/data/oceanmaps/',
         'chloro':'/opt/data/chloro/',
         'currents':'/opt/data/currents/',
         'ww3forecast':'/opt/data/wavewatch3/forecast/',
-        'mur':'/opt/data/sst/mur/'
+        'mur':'/opt/data/mur/'
     }
 
 
@@ -67,20 +67,20 @@ class oceanportal(default):
     mapservPath = '/usr/lib/cgi-bin/mapserv'
     dataDir = {
         'bran': '/opt/data/blue_link/data/BRAN3p5/',
-        'ersst': '/opt/data/sst/ersst/data/',
-        'reynolds': '/opt/data/sst/reynolds/',
+        'ersst': '/opt/data/ersst/',
+        'reynolds': '/opt/data/reynolds/',
         'sealevel': '/opt/data/sea_level/',
         'msla': '/opt/data/sea_level/',
         'ww3': '/opt/data/wavewatch3/',
-        'coral':'/opt/data/sst/coral/',
-        'coral_ol':'/opt/data/sst/coral/',
+        'coral':'/opt/data/coral/',
+        'coral_ol':'/opt/data/coral/',
         'poamasla':'/opt/data/poama/',
         'poamassta':'/opt/data/poama/',
         'oceanmaps':'/opt/data/oceanmaps/',
         'chloro':'/opt/data/chloro/',
         'currents':'/opt/data/currents/',
         'ww3forecast':'/opt/data/wavewatch3/forecast/',
-        'mur':'/opt/data/sst/mur/'
+        'mur':'/opt/data/mur/'
     }
 
 class tunceli(default):
@@ -131,4 +131,4 @@ class www4(default):
 class hoapp2(www4):
     debug = False
 
-__version__ = '1.0.1-1-gc7181e8'
+__version__ = ''

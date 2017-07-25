@@ -1,11 +1,16 @@
-#!/usr/bin/env sh
+#!/usr/bin/env bash
 
 DATASET=$1
 PERIOD=$2
 
-export PYTHONPATH=${PYTHONPATH}:/srv/map-portal/usr/lib/python2.6/site-packages/:/srv/map-portal/usr/lib64/python2.6/site-packages
-export PATH=${PATH}:/srv/map-portal/usr/bin/
-export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/srv/map-portal/usr/lib/
+#export PYTHONPATH=${PYTHONPATH}:/srv/map-portal/usr/lib/python2.6/site-packages/:/srv/map-portal/usr/lib64/python2.6/site-packages
+#export PATH=${PATH}:/srv/map-portal/usr/bin/
+#export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/srv/map-portal/usr/lib/
+
+export PYTHONPATH=${PYTHONPATH}:/opt/ocean-portal/usr/local/lib/python2.7/dist-packages
+export PATH=${PATH}:/opt/ocean-portal/usr/local/bin/
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/opt/ocean-portal/usr/local/lib/
+
 
 # configuration
 
@@ -114,7 +119,8 @@ case $DATASET in
         lftp $SERVER << EOF
 cd $SERVER_PATH || exit 1
 mirror --only-missing -n $MIRROR_FLAGS
-chmod -R 666
+#chmod -R 666
+chmod -R 777 /opt/data/
 EOF
     ;;
     poamasla)
@@ -138,7 +144,7 @@ from ocean.config import regionConfig
 
 #Read regionconfig files and do a loop to generate images for all regions
 #----------preprocess on tuscany--------
-url = "http://tuscany/portal/cgi/portal.py"
+url = "http://oceanportal.spc.int/oc/cgi/portal.py"
 
 for key, value in regionConfig.regions.iteritems():
     if value[0] == 'pac' or value[0] == None:
@@ -160,7 +166,7 @@ for key, value in regionConfig.regions.iteritems():
 
             
 #----------preprocess on tunceli--------
-url = "http://tunceli/portal/cgi/portal.py"
+url = "http://oceanportal.spc.int/oc/cgi/portal.py"
 
 for key, value in regionConfig.regions.iteritems():
     if value[0] == 'pac' or value[0] == None:
@@ -181,7 +187,7 @@ for key, value in regionConfig.regions.iteritems():
             print e.read()
 
 #----------preprocess on www--------
-url = "http://www.bom.gov.au/cosppac/apps/portal/cgi/portal.py"
+url = "http://oceanportal.spc.int/oc/cgi/portal.py"
 
 for key, value in regionConfig.regions.iteritems():
     if value[0] == 'pac' or value[0] == None:
@@ -225,7 +231,7 @@ from ocean.config import regionConfig
 
 #Read regionconfig files and do a loop to generate images for all regions
 #----------preprocess on tuscany--------
-url = "http://tuscany/portal/cgi/portal.py"
+url = "http://oceanportal.spc.int/oc/cgi/portal.py"
 
 #variable: ssta
 for key, value in regionConfig.regions.iteritems():
@@ -266,7 +272,7 @@ for key, value in regionConfig.regions.iteritems():
             print e.read()
 
 #----------preprocess on tunceli--------
-url = "http://tunceli/portal/cgi/portal.py"
+url = "http://oceanportal.spc.int/oc/cgi/portal.py"
 
 #variable: ssta
 for key, value in regionConfig.regions.iteritems():
@@ -307,7 +313,7 @@ for key, value in regionConfig.regions.iteritems():
             print e.read()
 
 #----------preprocess on www--------
-url = "http://www.bom.gov.au/cosppac/apps/portal/cgi/portal.py"
+url = "http://oceanportal.spc.int/oc/cgi/portal.py"
 
 #variable: ssta
 for key, value in regionConfig.regions.iteritems():
@@ -380,7 +386,7 @@ import urllib2
 import time
 
 #-------batch process on tuscany-----
-url = "http://tuscany/portal/cgi/portal.py"
+url = "http://oceanportal.spc.int/oc/cgi/portal.py"
 values = {"dataset": "ww3forecast",
           "variable": "sig_wav_ht",
           "plot": "map",
@@ -397,7 +403,7 @@ except urllib2.HTTPError as e:
     print e.read()
     
 #-------batch process on tunceli-----
-url = "http://tunceli/portal/cgi/portal.py"
+url = "http://oceanportal.spc.int/oc/cgi/portal.py"
 values = {"dataset": "ww3forecast",
           "variable": "sig_wav_ht",
           "plot": "map",
@@ -414,7 +420,7 @@ except urllib2.HTTPError as e:
     print e.read()
 
 #-------batch process on www-----
-url = "http://www.bom.gov.au/cosppac/apps/portal/cgi/portal.py"
+url = "http://oceanportal.spc.int/oc/cgi/portal.py"
 full_url = url + '?' + data
 try:
     response = urllib2.urlopen(full_url)
@@ -476,7 +482,7 @@ if '$PERIOD' == 'daily':
     print date
 
     #----------preprocess on tuscany--------
-    url = "http://tuscany/portal/cgi/portal.py"
+    url = "http://oceanportal.spc.int/oc/cgi/portal.py"
 
     #Read regionconfig files and do a loop to generate images for all regions
 
@@ -501,7 +507,7 @@ if '$PERIOD' == 'daily':
                 print e.read()
                 
     #----------preprocess on tunceli--------
-    url = "http://tunceli/portal/cgi/portal.py"
+    url = "http://oceanportal.spc.int/oc/cgi/portal.py"
 
     #Read regionconfig files and do a loop to generate images for all regions
 
@@ -526,7 +532,7 @@ if '$PERIOD' == 'daily':
                 print e.read()
 
     #----------preprocess on www --------
-    url = "http://www.bom.gov.au/cosppac/apps/portal/cgi/portal.py"
+    url = "http://oceanportal.spc.int/oc/cgi/portal.py"
 
     #Read regionconfig files and do a loop to generate images for all regions
 
@@ -569,7 +575,7 @@ elif '$PERIOD' == 'monthly':
             continue
         else:
             try:
-                check_call(['/srv/map-portal/usr/bin/wget', '--no-check-certificate', full_url, '-P', 'monthly'])
+                check_call(['/usr/bin/wget', '--no-check-certificate', full_url, '-P', 'monthly'])
             except CalledProcessError as cpe:
                 print cpe.message; 
                 print '\n'
@@ -596,7 +602,7 @@ elif '$PERIOD' == 'monthly':
     print 'preprocess image for ', date
 
     #----------preprocess on tuscany--------
-    url = "http://tuscany/portal/cgi/portal.py"
+    url = "http://oceanportal.spc.int/oc/cgi/portal.py"
 
     #Read regionconfig files and do a loop to generate images for all regions
     for key, value in regionConfig.regions.iteritems():
@@ -620,7 +626,7 @@ elif '$PERIOD' == 'monthly':
                 print e.read()
                 
     #----------preprocess on tunceli--------
-    url = "http://tunceli/portal/cgi/portal.py"
+    url = "http://oceanportal.spc.int/oc/cgi/portal.py"
 
     #Read regionconfig files and do a loop to generate images for all regions
     for key, value in regionConfig.regions.iteritems():
@@ -644,7 +650,7 @@ elif '$PERIOD' == 'monthly':
                 print e.read()
 
     #----------preprocess on www --------
-    url = "http://www.bom.gov.au/cosppac/apps/portal/cgi/portal.py"
+    url = "http://oceanportal.spc.int/oc/cgi/portal.py"
 
     #Read regionconfig files and do a loop to generate images for all regions
     for key, value in regionConfig.regions.iteritems():
@@ -719,6 +725,7 @@ EOF
 # apply a patch to ERSST files
 from ocean.processing.convert_ERSST_files import convert
 convert()
+print("ERSST Conversion Finished.")
 
 # calculate multi month averages
 from ocean.processing.Calculate_MultiMonth_Averages import Calculate_MultiMonth_Averages
@@ -800,7 +807,7 @@ import urllib2
 from ocean.config import regionConfig
 
 #-------------preprocess on tuscany--------
-url = "http://tuscany/portal/cgi/portal.py"
+url = "http://oceanportal.spc.int/oc/cgi/portal.py"
 values = {"dataset": "currentforecast",
           "variable": "currents",
           "plot": "map",
@@ -818,7 +825,7 @@ except urllib2.HTTPError as e:
     print e.read()
     
 #-------------preprocess on tunceli--------
-url = "http://tunceli/portal/cgi/portal.py"
+url = "http://oceanportal.spc.int/oc/cgi/portal.py"
 values = {"dataset": "currentforecast",
           "variable": "currents",
           "plot": "map",
@@ -836,7 +843,7 @@ except urllib2.HTTPError as e:
     print e.read()
 
 #-------------preprocess on www--------
-url = "http://www.bom.gov.au/cosppac/apps/portal/cgi/portal.py"
+url = "http://oceanportal.spc.int/oc/cgi/portal.py"
 full_url = url + '?' + data
 try:
     response = urllib2.urlopen(full_url, None, 60000)
