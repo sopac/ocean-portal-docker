@@ -4,7 +4,7 @@ MAINTAINER sachindras@spc.int
 
 RUN DEBIAN_FRONTEND=noninteractive apt-get -y update
 
-RUN apt-get -y install python-matplotlib python-matplotlib-data python-mpltoolkits.basemap python-mpltoolkits.basemap-data python-mapscript cgi-mapserver  python-matplotlib-venn libhdf4-0 netcdf-bin nco python-netcdf4 python-numpy python-scipy gdal-bin libgdal1i python-gdal libgeos-3.5.0 libgeos-c1v5 hdf5-tools hdf5-tools hdf5-tools libhdf5-10 libhdf5-cpp-11 python-h5py libnetcdf-c++4 libnetcdf-c++4-1 libnetcdf11 proj-bin proj-data python-pyproj libgeotiff-epsg python-pip python-setuptools python-dateutil git pngcrush emacs apache2 python-mplexporter
+RUN apt-get -y install python-matplotlib python-matplotlib-data python-mpltoolkits.basemap python-mpltoolkits.basemap-data python-mapscript cgi-mapserver  python-matplotlib-venn libhdf4-0 netcdf-bin nco python-netcdf4 python-numpy python-scipy gdal-bin libgdal1i python-gdal libgeos-3.5.0 libgeos-c1v5 hdf5-tools hdf5-tools hdf5-tools libhdf5-10 libhdf5-cpp-11 python-h5py libnetcdf-c++4 libnetcdf-c++4-1 libnetcdf11 proj-bin proj-data python-pyproj libgeotiff-epsg python-pip python-setuptools python-dateutil git pngcrush emacs apache2 python-mplexporter lftp wget
 
 RUN apt-get -y clean
 

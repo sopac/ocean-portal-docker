@@ -1,0 +1,916 @@
+#!/usr/bin/env bash
+
+DATASET=$1
+PERIOD=$2
+
+#export PYTHONPATH=${PYTHONPATH}:/srv/map-portal/usr/lib/python2.6/site-packages/:/srv/map-portal/usr/lib64/python2.6/site-packages
+#export PATH=${PATH}:/srv/map-portal/usr/bin/
+#export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/srv/map-portal/usr/lib/
+
+export PYTHONPATH=${PYTHONPATH}:/opt/ocean-portal/usr/local/lib/python2.7/dist-packages
+export PATH=${PATH}:/opt/ocean-portal/usr/local/bin/
+export LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:/opt/ocean-portal/usr/local/lib/
+
+
+# configuration
+
+case $DATASET in
+
+    ww3)
+        SERVER=http://opendap.bom.gov.au:8080/
+        SERVER_PATH=thredds/fileServer/nmoc/ww3_global_fc/
+        DATA_SUBDIR=forecast
+        ;;
+    oceanmaps)
+        SERVER=http://opendap.bom.gov.au:8080/
+        SERVER_PATH=thredds/fileServer/nmoc/oceanmaps_ofam_fc/ops/latest/
+        DATA_SUBDIR=data
+	;;
+    chloro)
+        SERVER=http://oceandata.sci.gsfc.nasa.gov
+        SERVER_PATH=cgi/getfile/
+        DATA_SUBDIR=
+        ;;
+    currents)
+        SERVER=http://tds.hycom.org/
+        SERVER_PATH=/thredds/dodsC/GLBu0.08/expt_91.2/forecasts
+        DATA_SUBDIR=daily
+        ;;
+    coral)
+        SERVER=ftp://ftp.star.nesdis.noaa.gov
+        SERVER_PATH=/pub/sod/mecb/crw/data/5km/nc/baa_max_comp_7day
+        DATA_SUBDIR=daily
+        MIRROR_FLAGS='-I baa_max*.nc'
+        ;;
+    coral_ol)
+        SERVER=ftp://ftp.star.nesdis.noaa.gov
+        SERVER_PATH=/pub/sod/mecb/crw/data/cfsv2_outlook_v3/
+        DATA_SUBDIR=outlook
+        MIRROR_FLAGS='-I outlook*.dat'
+        ;;
+    msla)
+        SERVER=ftp://ftp.sltac.cls.fr/
+        SERVER_PATH=/Core/SEALEVEL_GLO_SLA_MAP_L4_NRT_OBSERVATIONS_008_026/dataset-duacs-nrt-global-merged-allsat-msla-l4
+        DATA_SUBDIR=grids/daily
+        ;;
+    poamasla)
+        SERVER=http://opendap.bom.gov.au:8080
+        SERVER_PATH=/thredds/fileServer/paccsap/sea_level_seasonal/grid/
+        DATA_SUBDIR=sla
+        ;;
+    poamassta)
+        SERVER=http://opendap.bom.gov.au:8080
+        SERVER_PATH=/thredds/fileServer/paccsap/sea_surface_temperature_seasonal/grid/
+        DATA_SUBDIR=ssta
+        ;;
+    ersst)
+        SERVER=ftp.ncdc.noaa.gov
+        SERVER_PATH=/pub/data/cmb/ersst/v3b/netcdf/
+        DATA_SUBDIR=monthly
+        ;;
+    reynolds)
+        SERVER=eclipse.ncdc.noaa.gov
+        SERVER_PATH=/pub/oisst/NetCDF/
+        DATA_SUBDIR=daily-new
+        MIRROR_FLAGS='-I *.nc.gz'
+        ;;
+    decile)
+        SERVER=d
+        SERVER_PATH=e
+        DATA_SUBDIR=c
+        ;;
+    sealevel)
+        BASE_URL=http://www.bom.gov.au/ntc
+        DATA_SUBDIR=gauges-new
+        ;;
+    mur)
+	SERVER=http://podaac-opendap.jpl.nasa.gov
+	SERVER_PATH=/opendap/allData/ghrsst/data/L4/GLOB/JPL/MUR/
+	DATA_SUBDIR=data
+	;;
+    *)
+        echo "Unknown dataset $DATASET" >&2
+        exit 1
+        ;;
+esac
+
+# load variables from ocean.config
+
+if [ "$DATASET" != "decile" ]; then
+
+DATA_DIR=`python << EOF
+from ocean.config import get_server_config
+
+config = get_server_config()
+print config['dataDir']["$DATASET"]
+EOF`
+
+if [ "x$DATA_DIR" = "x" ]; then
+    echo "DATA_DIR empty, very bad! Is PYTHONPATH set?" >&2
+    exit 1
+fi
+
+# download data
+cd $DATA_DIR$DATA_SUBDIR || exit 1
+fi
+
+case $DATASET in
+    reynolds|ersst|coral|coral_ol)
+        lftp $SERVER << EOF
+cd $SERVER_PATH || exit 1
+mirror --only-missing -n $MIRROR_FLAGS
+#chmod -R 666
+chmod -R 777 /opt/data/
+EOF
+    ;;
+    poamasla)
+            FILE='sla_grid_latest.nc'
+            URL=$SERVER/$SERVER_PATH/$FILE
+            wget -q "$URL" -O "$FILE"|| echo -n "error ($?)"
+            response=`python << EOF
+import os
+from subprocess import check_call, CalledProcessError
+try:
+    check_call(['ncatted', '-a', '_FillValue,HEIGHT,c,f,NaN', '$FILE'])
+except CalledProcessError as cpe:
+    print cpe.read()
+    print '\n'
+"""
+pre-generate configuration file and images.
+"""
+import urllib
+import urllib2
+from ocean.config import regionConfig
+
+#Read regionconfig files and do a loop to generate images for all regions
+#----------preprocess on tuscany--------
+url = "http://oceanportal.spc.int/oc/cgi/portal.py"
+
+for key, value in regionConfig.regions.iteritems():
+    if value[0] == 'pac' or value[0] == None:
+        values = {"dataset": "poamasla",
+                  "variable": "height",
+                  "plot": "map",
+                  "period": "seasonal",
+                  "area": key,
+                  "date": "20120701",
+                  "mode": "preprocess"
+                   }
+        data = urllib.urlencode(values)
+        full_url = url + '?' + data
+        try:
+            response = urllib2.urlopen(full_url)
+            print response.read()
+        except urllib2.HTTPError as e:
+            print e.read()
+
+            
+#----------preprocess on tunceli--------
+url = "http://oceanportal.spc.int/oc/cgi/portal.py"
+
+for key, value in regionConfig.regions.iteritems():
+    if value[0] == 'pac' or value[0] == None:
+        values = {"dataset": "poamasla",
+                  "variable": "height",
+                  "plot": "map",
+                  "period": "seasonal",
+                  "area": key,
+                  "date": "20120701",
+                  "mode": "preprocess"
+                   }
+        data = urllib.urlencode(values)
+        full_url = url + '?' + data
+        try:
+            response = urllib2.urlopen(full_url)
+            print response.read()
+        except urllib2.HTTPError as e:
+            print e.read()
+
+#----------preprocess on www--------
+url = "http://oceanportal.spc.int/oc/cgi/portal.py"
+
+for key, value in regionConfig.regions.iteritems():
+    if value[0] == 'pac' or value[0] == None:
+        values = {"dataset": "poamasla",
+                  "variable": "height",
+                  "plot": "map",
+                  "period": "seasonal",
+                  "area": key,
+                  "date": "20120701",
+                  "mode": "preprocess"
+                   }
+        data = urllib.urlencode(values)
+        full_url = url + '?' + data
+        try:
+            response = urllib2.urlopen(full_url)
+            print response.read()
+        except urllib2.HTTPError as e:
+            print e.read()
+
+EOF`
+            echo -n $response
+    ;;
+    poamassta)
+            FILE='PACCSAP_oa_latest.nc'
+            URL=$SERVER/$SERVER_PATH/$FILE
+            wget -q "$URL" -O "$FILE" || echo -n "error ($?)"
+            response=`python << EOF
+import os
+from subprocess import check_call, CalledProcessError
+try:
+    check_call(['ncatted', '-a', '_FillValue,SSTA,c,f,-999', '$FILE'])
+except CalledProcessError as cpe:
+    print cpe.read()
+    print '\n'
+"""
+pre-generate configuration file and images.
+"""
+import urllib
+import urllib2
+from ocean.config import regionConfig
+
+#Read regionconfig files and do a loop to generate images for all regions
+#----------preprocess on tuscany--------
+url = "http://oceanportal.spc.int/oc/cgi/portal.py"
+
+#variable: ssta
+for key, value in regionConfig.regions.iteritems():
+    if value[0] == 'pac' or value[0] == None:
+        values = {"dataset": "poamassta",
+                  "variable": "ssta",
+                  "plot": "map",
+                  "period": "seasonal",
+                  "area": key,
+                  "date": "20120701",
+                  "mode": "preprocess"
+                   }
+        data = urllib.urlencode(values)
+        full_url = url + '?' + data
+        try:
+            response = urllib2.urlopen(full_url)
+            print response.read()
+        except urllib2.HTTPError as e:
+            print e.read()
+
+#variable: sst
+for key, value in regionConfig.regions.iteritems():
+    if value[0] == 'pac' or value[0] == None:
+        values = {"dataset": "poamassta",
+                  "variable": "sst",
+                  "plot": "map",
+                  "period": "seasonal",
+                  "area": key,
+                  "date": "20120701",
+                  "mode": "preprocess"
+                   }
+        data = urllib.urlencode(values)
+        full_url = url + '?' + data
+        try:
+            response = urllib2.urlopen(full_url)
+            print response.read()
+        except urllib2.HTTPError as e:
+            print e.read()
+
+#----------preprocess on tunceli--------
+url = "http://oceanportal.spc.int/oc/cgi/portal.py"
+
+#variable: ssta
+for key, value in regionConfig.regions.iteritems():
+    if value[0] == 'pac' or value[0] == None:
+        values = {"dataset": "poamassta",
+                  "variable": "ssta",
+                  "plot": "map",
+                  "period": "seasonal",
+                  "area": key,
+                  "date": "20120701",
+                  "mode": "preprocess"
+                   }
+        data = urllib.urlencode(values)
+        full_url = url + '?' + data
+        try:
+            response = urllib2.urlopen(full_url)
+            print response.read()
+        except urllib2.HTTPError as e:
+            print e.read()
+
+#variable: sst
+for key, value in regionConfig.regions.iteritems():
+    if value[0] == 'pac' or value[0] == None:
+        values = {"dataset": "poamassta",
+                  "variable": "sst",
+                  "plot": "map",
+                  "period": "seasonal",
+                  "area": key,
+                  "date": "20120701",
+                  "mode": "preprocess"
+                   }
+        data = urllib.urlencode(values)
+        full_url = url + '?' + data
+        try:
+            response = urllib2.urlopen(full_url)
+            print response.read()
+        except urllib2.HTTPError as e:
+            print e.read()
+
+#----------preprocess on www--------
+url = "http://oceanportal.spc.int/oc/cgi/portal.py"
+
+#variable: ssta
+for key, value in regionConfig.regions.iteritems():
+    if value[0] == 'pac' or value[0] == None:
+        values = {"dataset": "poamassta",
+                  "variable": "ssta",
+                  "plot": "map",
+                  "period": "seasonal",
+                  "area": key,
+                  "date": "20120701",
+                  "mode": "preprocess"
+                   }
+        data = urllib.urlencode(values)
+        full_url = url + '?' + data
+        try:
+            response = urllib2.urlopen(full_url)
+            print response.read()
+        except urllib2.HTTPError as e:
+            print e.read()
+
+#variable: sst
+for key, value in regionConfig.regions.iteritems():
+    if value[0] == 'pac' or value[0] == None:
+        values = {"dataset": "poamassta",
+                  "variable": "sst",
+                  "plot": "map",
+                  "period": "seasonal",
+                  "area": key,
+                  "date": "20120701",
+                  "mode": "preprocess"
+                   }
+        data = urllib.urlencode(values)
+        full_url = url + '?' + data
+        try:
+            response = urllib2.urlopen(full_url)
+            print response.read()
+        except urllib2.HTTPError as e:
+            print e.read()
+
+EOF`
+            echo -n $response
+    ;;
+    ww3)
+        find . -type f -name 'ww3_[0-9][0-9][0-9][0-9][0-9][0-9][0-9][0-9]_[0-9][0-9].nc' -delete
+        dates=("$(date +"%Y%m%d")" "$(date --date="yesterday" +"%Y%m%d")")
+        hours=("12" "00")
+        for date in "${dates[@]}"
+        do
+            for hour in "${hours[@]}"
+            do
+                FILE="$(printf "ww3_%s_%s.nc" "$date" "$hour")"
+                URL=$SERVER/$SERVER_PATH/$FILE
+                if [[ -e $FILE ]];
+                then
+                    break 2;
+                else
+                    wget -nc -nv "$URL";
+                    if [[ $? -eq 0 ]];
+                    then
+                        break 2;
+                    else
+                        continue; 
+                    fi
+                fi
+            done
+        done
+        response=`python << EOF
+import urllib
+import urllib2
+import time
+
+#-------batch process on tuscany-----
+url = "http://oceanportal.spc.int/oc/cgi/portal.py"
+values = {"dataset": "ww3forecast",
+          "variable": "sig_wav_ht",
+          "plot": "map",
+          "period": "7days",
+          "area": "pac",
+          "mode": "preprocess"
+           }
+data = urllib.urlencode(values)
+full_url = url + '?' + data
+try:
+    response = urllib2.urlopen(full_url)
+    print response.read()
+except urllib2.HTTPError as e:
+    print e.read()
+    
+#-------batch process on tunceli-----
+url = "http://oceanportal.spc.int/oc/cgi/portal.py"
+values = {"dataset": "ww3forecast",
+          "variable": "sig_wav_ht",
+          "plot": "map",
+          "period": "7days",
+          "area": "pac",
+          "mode": "preprocess"
+           }
+data = urllib.urlencode(values)
+full_url = url + '?' + data
+try:
+    response = urllib2.urlopen(full_url)
+    print response.read()
+except urllib2.HTTPError as e:
+    print e.read()
+
+#-------batch process on www-----
+url = "http://oceanportal.spc.int/oc/cgi/portal.py"
+full_url = url + '?' + data
+try:
+    response = urllib2.urlopen(full_url)
+    print response.read()
+except urllib2.HTTPError as e:
+    print e.read()
+
+EOF`
+        echo -n $response
+    ;;
+    chloro)
+        response=`python << EOF
+import os
+import urllib
+import urllib2
+from datetime import timedelta, date
+from dateutil.relativedelta import relativedelta
+from subprocess import check_call, CalledProcessError
+from ocean.config import regionConfig
+import calendar
+
+url = '$SERVER/$SERVER_PATH'
+today = date.today()
+format = "%Y%m%d"
+#daily
+if '$PERIOD' == 'daily':
+    for delta in range(4):
+        date = today + timedelta(-delta)
+        date = date.timetuple()
+        file_name = 'A%4d%03d.L3m_DAY_CHL_chlor_a_4km' % (date.tm_year, date.tm_yday)
+        nc_file_name = file_name + '.nc'
+        nc_file_path = 'daily/' + nc_file_name
+        full_url = url + nc_file_name
+        print full_url
+        if os.path.exists(nc_file_path):
+            continue
+        else:
+            try:
+                check_call(['/srv/map-portal/usr/bin/wget', '--no-check-certificate', full_url, '-P', 'daily'])
+            except CalledProcessError as cpe:
+                print cpe.message; 
+                print '\n'
+                continue
+            except OSError as oe:
+                print oe.strerror;
+                print '\n'
+                print full_url;
+                print '\n'
+                continue
+
+
+
+    #----------preprocess --------
+    """
+    TODO: pre-generate images.
+    """
+    date = today + timedelta(-2)
+    date = date.strftime(format)
+    print date
+
+    #----------preprocess on tuscany--------
+    url = "http://oceanportal.spc.int/oc/cgi/portal.py"
+
+    #Read regionconfig files and do a loop to generate images for all regions
+
+    for key, value in regionConfig.regions.iteritems():
+        if value[0] == 'pac' or value[0] == None:
+            print key
+            values = {"dataset": "chlorophyll",
+                      "variable": "chldaily",
+                      "plot": "map",
+                      "period": "daily",
+                      "area": key,
+                      "date": date,
+                      "mode": "preprocess"
+                       }
+            data = urllib.urlencode(values)
+            full_url = url + '?' + data
+            print full_url
+            try:
+                response = urllib2.urlopen(full_url)
+                print response.read()
+            except urllib2.HTTPError as e:
+                print e.read()
+                
+    #----------preprocess on tunceli--------
+    url = "http://oceanportal.spc.int/oc/cgi/portal.py"
+
+    #Read regionconfig files and do a loop to generate images for all regions
+
+    for key, value in regionConfig.regions.iteritems():
+        if value[0] == 'pac' or value[0] == None:
+            print key
+            values = {"dataset": "chlorophyll",
+                      "variable": "chldaily",
+                      "plot": "map",
+                      "period": "daily",
+                      "area": key,
+                      "date": date,
+                      "mode": "preprocess"
+                       }
+            data = urllib.urlencode(values)
+            full_url = url + '?' + data
+            print full_url
+            try:
+                response = urllib2.urlopen(full_url)
+                print response.read()
+            except urllib2.HTTPError as e:
+                print e.read()
+
+    #----------preprocess on www --------
+    url = "http://oceanportal.spc.int/oc/cgi/portal.py"
+
+    #Read regionconfig files and do a loop to generate images for all regions
+
+    for key, value in regionConfig.regions.iteritems():
+        if value[0] == 'pac' or value[0] == None:
+            print key
+            values = {"dataset": "chlorophyll",
+                      "variable": "chldaily",
+                      "plot": "map",
+                      "period": "daily",
+                      "area": key,
+                      "date": date,
+                      "mode": "preprocess"
+                       }
+            data = urllib.urlencode(values)
+            full_url = url + '?' + data
+            print full_url
+            try:
+                response = urllib2.urlopen(full_url)
+                print response.read()
+            except urllib2.HTTPError as e:
+                print e.read()
+
+#monthly
+elif '$PERIOD' == 'monthly':
+    date = today.replace(day=1)
+    for delta in range(2):
+        date = date + timedelta(-1)
+        first_day_month = date.replace(day=1)
+        last_day_month = date.replace(day=calendar.monthrange(date.year, date.month)[1])
+        date = first_day_month
+
+        first_date = first_day_month.timetuple()
+        last_date = last_day_month.timetuple() 
+        file_name = 'A%4d%03d%4d%03d.L3m_MO_CHL_chlor_a_4km' % (first_date.tm_year, first_date.tm_yday, last_date.tm_year, last_date.tm_yday)
+        nc_file_name = file_name + '.nc'
+        nc_file_path = 'monthly/' + nc_file_name
+        full_url = url + nc_file_name
+        if os.path.exists(nc_file_path):
+            continue
+        else:
+            try:
+                check_call(['/usr/bin/wget', '--no-check-certificate', full_url, '-P', 'monthly'])
+            except CalledProcessError as cpe:
+                print cpe.message; 
+                print '\n'
+                continue
+            except OSError as oe:
+                print oe.strerror;
+                print '\n'
+                print full_url;
+                print '\n'
+                continue
+
+
+    #----------preprocess --------
+    """
+    pre-generate images.
+    """
+    print
+    print 'pre-generate images.'
+    from datetime import date
+    last_month = today - relativedelta(months=1)
+    last_month_unformatted = date(last_month.year, last_month.month, 1)
+    date = last_month_unformatted.strftime(format)
+
+    print 'preprocess image for ', date
+
+    #----------preprocess on tuscany--------
+    url = "http://oceanportal.spc.int/oc/cgi/portal.py"
+
+    #Read regionconfig files and do a loop to generate images for all regions
+    for key, value in regionConfig.regions.iteritems():
+        if value[0] == 'pac' or value[0] == None:
+            print key + ' : ' + date
+            values = {"dataset": "chlorophyll",
+                      "variable": "chlmonthly",
+                      "plot": "map",
+                      "period": "monthly",
+                      "area": key,
+                      "date": date,
+                      "mode": "preprocess"
+                       }
+            data = urllib.urlencode(values)
+            full_url = url + '?' + data
+            print full_url
+            try:
+                response = urllib2.urlopen(full_url)
+                print response.read()
+            except urllib2.HTTPError as e:
+                print e.read()
+                
+    #----------preprocess on tunceli--------
+    url = "http://oceanportal.spc.int/oc/cgi/portal.py"
+
+    #Read regionconfig files and do a loop to generate images for all regions
+    for key, value in regionConfig.regions.iteritems():
+        if value[0] == 'pac' or value[0] == None:
+            print key + ' : ' + date
+            values = {"dataset": "chlorophyll",
+                      "variable": "chlmonthly",
+                      "plot": "map",
+                      "period": "monthly",
+                      "area": key,
+                      "date": date,
+                      "mode": "preprocess"
+                       }
+            data = urllib.urlencode(values)
+            full_url = url + '?' + data
+            print full_url
+            try:
+                response = urllib2.urlopen(full_url)
+                print response.read()
+            except urllib2.HTTPError as e:
+                print e.read()
+
+    #----------preprocess on www --------
+    url = "http://oceanportal.spc.int/oc/cgi/portal.py"
+
+    #Read regionconfig files and do a loop to generate images for all regions
+    for key, value in regionConfig.regions.iteritems():
+        if value[0] == 'pac' or value[0] == None:
+            print key + ' : ' + date
+            values = {"dataset": "chlorophyll",
+                      "variable": "chlmonthly",
+                      "plot": "map",
+                      "period": "monthly",
+                      "area": key,
+                      "date": date,
+                      "mode": "preprocess"
+                       }
+            data = urllib.urlencode(values)
+            full_url = url + '?' + data
+            print full_url
+            try:
+                response = urllib2.urlopen(full_url)
+                print response.read()
+            except urllib2.HTTPError as e:
+                print e.read()
+
+EOF`
+        echo -n $response
+    ;;
+    sealevel)
+        python << EOF | while read PRODUCT GAUGE
+from ocean.config.tidalGaugeConfig import tidalGauge
+
+for gauge in tidalGauge:
+    product = gauge.split('_')[0]
+    print product, gauge
+
+EOF
+        do
+            echo -n "$GAUGE: "
+            FILE=${GAUGE}SLD.txt
+            URL=$BASE_URL/$PRODUCT/$FILE
+            echo -n "$URL "
+            wget -qO $FILE $URL || echo -n "error ($?)"
+            echo
+        done
+    ;;
+
+esac
+
+# processing
+
+case $DATASET in
+    reynolds)
+        python << EOF
+# recompress daily data
+from ocean.processing.uncompress_synched_data import uncompress_synched_data
+
+uncompress_synched_data().process("$DATASET")
+print "Calculate Monthly Averages..."
+
+# calculate monthly averages
+from ocean.processing.Calculate_Monthly_Averages import Calculate_Monthly_Averages
+
+Calculate_Monthly_Averages().process("$DATASET")
+
+from ocean.processing.Calculate_Weekly_Averages import Calculate_Weekly_Averages
+Calculate_Weekly_Averages().process("$DATASET")
+
+EOF
+
+    ;& # continue
+
+    ersst)
+        python << EOF
+# apply a patch to ERSST files
+from ocean.processing.convert_ERSST_files import convert
+convert()
+print("ERSST Conversion Finished.")
+
+# calculate multi month averages
+from ocean.processing.Calculate_MultiMonth_Averages import Calculate_MultiMonth_Averages
+
+Calculate_MultiMonth_Averages().process("$DATASET")
+
+# FIXME: calculate deciles
+EOF
+    ;;
+    msla)
+        # Read login detail for msla dataset.
+        source_path=${0%/*}
+        IFS=' ' read -a credentials <<< `cat $source_path/userpass`
+        USER_NAME=${credentials[0]}
+        PASSWORD=${credentials[1]}
+
+        #Gets the data
+        cd $DATA_DIR$DATA_SUBDIR || exit 1
+
+        FILE_DATE=`date +%Y%m%d -d 'yesterday'`
+        FILE_PREFIX='nrt_global_allsat_msla_h_'
+
+        ORIGINAL_FILE_NAME=$FILE_PREFIX'latest.nc.gz'
+        NEW_FILE_NAME=$FILE_PREFIX$FILE_DATE'_'$FILE_DATE'.nc.gz'
+
+        lftp -u $USER_NAME:$PASSWORD $SERVER$SERVER_PATH -e "get $ORIGINAL_FILE_NAME -o $DATA_DIR$DATA_SUBDIR/$NEW_FILE_NAME; exit;"
+        #mirror --only-missing -n $MIRROR_FLAGS
+        #chmod -R 666
+        cd $DATA_DIR$DATA_SUBDIR
+        gunzip -f $NEW_FILE_NAME
+
+        python << EOF
+print "Calculate Monthly Averages..."
+
+# calculate monthly averages
+from ocean.processing.Calculate_Monthly_Averages import Calculate_Monthly_Averages
+
+Calculate_Monthly_Averages().process("$DATASET")
+EOF
+    ;;
+    coral_ol)
+        python << EOF
+print "Convert CRW Outlook V3 to NETCDF..."
+
+from ocean.processing.Convert_Coral_Outlook import Convert_Outlook
+
+Convert_Outlook("$DATA_DIR","$DATA_SUBDIR")
+
+EOF
+    ;;
+
+    currents)
+        python << EOF
+print "Download and Convert HYCOM Currents..."
+
+from ocean.processing.Download_Compile_HYCOM_Currents import Download_Compile_HYCOM_Currents
+import sys, traceback
+
+retry = 0
+retry_max = 3
+flag = True
+while flag:
+    try:
+        Download_Compile_HYCOM_Currents("$DATA_DIR","$DATA_SUBDIR","$SERVER","$SERVER_PATH")
+        print 'The currents file has been downloaded successfully.'
+        flag = False
+    except Exception,e:
+        exc_type, exc_value, exc_traceback = sys.exc_info()
+        if 'NetCDF' in str(exc_value):
+            if (retry < retry_max):
+                retry = retry + 1
+                continue
+            else:
+                print 'Gave up after retrying ' + str(retry) + ' times for "' + str(exc_value) + '"'
+                break
+
+import urllib
+import urllib2
+from ocean.config import regionConfig
+
+#-------------preprocess on tuscany--------
+url = "http://oceanportal.spc.int/oc/cgi/portal.py"
+values = {"dataset": "currentforecast",
+          "variable": "currents",
+          "plot": "map",
+          "period": "3days",
+          "area": "fiji",
+          "date": "20120701",
+          "mode": "preprocess"
+         }
+data = urllib.urlencode(values)
+full_url = url + '?' + data
+try:
+    response = urllib2.urlopen(full_url, None, 60000)
+    print response.read()
+except urllib2.HTTPError as e:
+    print e.read()
+    
+#-------------preprocess on tunceli--------
+url = "http://oceanportal.spc.int/oc/cgi/portal.py"
+values = {"dataset": "currentforecast",
+          "variable": "currents",
+          "plot": "map",
+          "period": "3days",
+          "area": "fiji",
+          "date": "20120701",
+          "mode": "preprocess"
+         }
+data = urllib.urlencode(values)
+full_url = url + '?' + data
+try:
+    response = urllib2.urlopen(full_url, None, 60000)
+    print response.read()
+except urllib2.HTTPError as e:
+    print e.read()
+
+#-------------preprocess on www--------
+url = "http://oceanportal.spc.int/oc/cgi/portal.py"
+full_url = url + '?' + data
+try:
+    response = urllib2.urlopen(full_url, None, 60000)
+    print response.read()
+except urllib2.HTTPError as e:
+    print e.read()
+
+EOF
+    ;;
+
+    mur)
+	python << EOF
+print "Download MUR and process fronts..."
+from datetime import timedelta, date
+from ocean.processing.Download_MUR import Download_MUR
+from ocean.config import regionConfig
+import glob
+import sys, traceback
+
+today=date.today()
+retry_max = 3
+
+for delta in range(2, 4):
+    baseStartDate = today + timedelta(-delta)
+    year=baseStartDate.year
+    month=baseStartDate.month
+    day=baseStartDate.day
+    date = str(year) + str(month).zfill(2) + str(day).zfill(2)
+
+    #check file availability for each region and process if file does not exist
+    for key, value in regionConfig.regions.iteritems():
+        filepath = "$DATA_DIR" + "$DATA_SUBDIR" + "/" + key
+        totalFiles = len(glob.glob(filepath + "/" + "*" + date + "*"))
+        if ((regionConfig.regions[key][0]=='pac' and totalFiles != 4 and key != 'nauru') or (regionConfig.regions[key][0]=='pac' and totalFiles != 1 and key == 'nauru')):
+            flag = True
+            print 'processing files for ' + key + ' date: ' + date
+            retry = 0
+            while flag:
+                try:
+                    Download_MUR("$DATA_DIR","$DATA_SUBDIR","$SERVER","$SERVER_PATH", day, month, year, key)
+                    flag = False
+                except Exception,e:
+                    exc_type, exc_value, exc_traceback = sys.exc_info()
+                    if 'NetCDF' in str(exc_value):
+                        if (retry < retry_max):
+                            retry = retry + 1
+                            continue
+                        else:
+                            print 'Gave up after retrying ' + str(retry) + ' times for "' + str(exc_value) + '"'
+                            break
+        else:
+            if (regionConfig.regions[key][0]=='pac'):
+                print 'file exists. skipping processing for ' + key + ' date: ' + date
+EOF
+    ;;
+
+    decile)
+        python << EOF
+print "Calculate Decile ..."
+
+# calculate decile: reynolds and ersst
+from ocean.processing.Calculate_Deciles import Calculate_Deciles
+
+Calculate_Deciles().process("reynolds")
+Calculate_Deciles().process("ersst")
+
+EOF
+    ;;
+
+esac
