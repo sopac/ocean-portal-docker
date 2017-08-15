@@ -16,8 +16,8 @@ echo UPDATING: sealevel
 echo \n\n
 chmod 777 -R /opt/data
 
-echo UPDATING: decile
-/opt/ocean-portal/usr/local/bin/update-data decile
+#echo UPDATING: decile
+#/opt/ocean-portal/usr/local/bin/update-data decile
 echo \n\n
 chmod 777 -R /opt/data
 
