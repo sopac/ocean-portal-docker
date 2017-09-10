@@ -1,0 +1,298 @@
+Updating Pacific Ocean Portal...
+UPDATING: reynolds
+chmod: Access failed: 550 /opt/data/: No such file or directory
+chmod: Access failed: 550 /opt/data: No such file or directory
+Uncompressing reynolds data files......
+
+gzip: /opt/data/reynolds/daily-new-uncompressed/avhrr-only-v2.20170807_preliminary.nc.gz: unexpected end of file
+New files added: 3
+Files updated: 0
+Files already up-to-date: 13129
+Final date processed: 2017-08-14
+Calculate Monthly Averages...
+7
+2017-08-06 00:00:00
+2017-08-06 00:00:00
+6 8
+ERSST Conversion Finished.
+nn
+UPDATING: ersst
+cd: Cannot assign requested address
+Missing input file: /opt/data/ersst/monthly_processed/ersst.201707.nc
+ERSST Conversion Finished.
+Traceback (most recent call last):
+  File "<stdin>", line 9, in <module>
+  File "/opt/ocean-portal/usr/local/lib/python2.7/dist-packages/ocean/processing/Calculate_MultiMonth_Averages.py", line 144, in process
+    self._calc_multimonth_average(settings, year, month, avg_period)
+  File "/opt/ocean-portal/usr/local/lib/python2.7/dist-packages/ocean/processing/Calculate_MultiMonth_Averages.py", line 204, in _calc_multimonth_average
+    raise Exception('Missing input file: ' + input_file_fullpath)
+Exception: Missing input file: /opt/data/ersst/monthly_processed/ersst.201707.nc
+nn
+UPDATING: sealevel
+IDO70000_60930_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_60930_SLD.txt 
+IDO70000_63230_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_63230_SLD.txt 
+IDO70000_61490_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_61490_SLD.txt 
+IDO70000_60590_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_60590_SLD.txt 
+IDO70000_60710_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_60710_SLD.txt 
+IDO70000_61800_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_61800_SLD.txt 
+IDO70000_59511_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_59511_SLD.txt 
+IDO70000_62290_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_62290_SLD.txt 
+IDO70000_61220_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_61220_SLD.txt 
+IDO70000_61410_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_61410_SLD.txt 
+IDO70000_59410_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_59410_SLD.txt 
+IDO70063: http://www.bom.gov.au/ntc/IDO70063/IDO70063SLD.txt 
+IDO70000_61900_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_61900_SLD.txt 
+IDO70000_63511_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_63511_SLD.txt 
+IDO70060: http://www.bom.gov.au/ntc/IDO70060/IDO70060SLD.txt 
+IDO70000_62080_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_62080_SLD.txt 
+IDO70000_60130_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_60130_SLD.txt 
+IDO70000_62550_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_62550_SLD.txt 
+IDO70000_59510_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_59510_SLD.txt 
+IDO70000_61780_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_61780_SLD.txt 
+IDO70000_60530_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_60530_SLD.txt 
+IDO70000_59300_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_59300_SLD.txt 
+IDO70000_62435_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_62435_SLD.txt 
+IDO70062: http://www.bom.gov.au/ntc/IDO70062/IDO70062SLD.txt 
+IDO70061: http://www.bom.gov.au/ntc/IDO70061/IDO70061SLD.txt 
+IDO70000_59850_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_59850_SLD.txt 
+IDO70000_61685_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_61685_SLD.txt 
+IDO71059: http://www.bom.gov.au/ntc/IDO71059/IDO71059SLD.txt 
+IDO71058: http://www.bom.gov.au/ntc/IDO71058/IDO71058SLD.txt 
+IDO71055: http://www.bom.gov.au/ntc/IDO71055/IDO71055SLD.txt 
+IDO71054: http://www.bom.gov.au/ntc/IDO71054/IDO71054SLD.txt 
+IDO71057: http://www.bom.gov.au/ntc/IDO71057/IDO71057SLD.txt 
+IDO71056: http://www.bom.gov.au/ntc/IDO71056/IDO71056SLD.txt 
+IDO71051: http://www.bom.gov.au/ntc/IDO71051/IDO71051SLD.txt 
+IDO71053: http://www.bom.gov.au/ntc/IDO71053/IDO71053SLD.txt 
+IDO71052: http://www.bom.gov.au/ntc/IDO71052/IDO71052SLD.txt 
+IDO70000_63090_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_63090_SLD.txt 
+IDO70000_60948_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_60948_SLD.txt 
+IDO70052: http://www.bom.gov.au/ntc/IDO70052/IDO70052SLD.txt 
+IDO70053: http://www.bom.gov.au/ntc/IDO70053/IDO70053SLD.txt 
+IDO70051: http://www.bom.gov.au/ntc/IDO70051/IDO70051SLD.txt 
+IDO70056: http://www.bom.gov.au/ntc/IDO70056/IDO70056SLD.txt 
+IDO70057: http://www.bom.gov.au/ntc/IDO70057/IDO70057SLD.txt 
+IDO70054: http://www.bom.gov.au/ntc/IDO70054/IDO70054SLD.txt 
+IDO70055: http://www.bom.gov.au/ntc/IDO70055/IDO70055SLD.txt 
+IDO70058: http://www.bom.gov.au/ntc/IDO70058/IDO70058SLD.txt 
+IDO70059: http://www.bom.gov.au/ntc/IDO70059/IDO70059SLD.txt 
+IDO70000_60420_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_60420_SLD.txt 
+IDO70000_62230_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_62230_SLD.txt 
+IDO70000_59040_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_59040_SLD.txt 
+IDO70000_62370_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_62370_SLD.txt 
+IDO70000_62590_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_62590_SLD.txt 
+IDO70000_60571_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_60571_SLD.txt 
+IDO70000_59980_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_59980_SLD.txt 
+IDO70000_59750_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_59750_SLD.txt 
+IDO70000_61600_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_61600_SLD.txt 
+IDO70000_62000_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_62000_SLD.txt 
+IDO70000_60910_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_60910_SLD.txt 
+IDO70000_60730_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_60730_SLD.txt 
+IDO70000_62470_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_62470_SLD.txt 
+IDO70000_59200_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_59200_SLD.txt 
+IDO70000_61840_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_61840_SLD.txt 
+IDO70000_62120_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_62120_SLD.txt 
+IDO70000_63580_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_63580_SLD.txt 
+IDO70000_63480_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_63480_SLD.txt 
+IDO70000_60370_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_60370_SLD.txt 
+IDO70000_62650_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_62650_SLD.txt 
+IDO70000_59250_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_59250_SLD.txt 
+IDO70000_59950_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_59950_SLD.txt 
+IDO70000_59140_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_59140_SLD.txt 
+IDO70000_60780_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_60780_SLD.txt 
+IDO71064: http://www.bom.gov.au/ntc/IDO71064/IDO71064SLD.txt 
+IDO71065: http://www.bom.gov.au/ntc/IDO71065/IDO71065SLD.txt 
+IDO71066: http://www.bom.gov.au/ntc/IDO71066/IDO71066SLD.txt 
+IDO71060: http://www.bom.gov.au/ntc/IDO71060/IDO71060SLD.txt 
+IDO71061: http://www.bom.gov.au/ntc/IDO71061/IDO71061SLD.txt 
+IDO71062: http://www.bom.gov.au/ntc/IDO71062/IDO71062SLD.txt 
+IDO71063: http://www.bom.gov.au/ntc/IDO71063/IDO71063SLD.txt 
+IDO70000_59060_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_59060_SLD.txt 
+IDO70000_63620_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_63620_SLD.txt 
+IDO70000_60770_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_60770_SLD.txt 
+IDO70000_59820_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_59820_SLD.txt 
+IDO70000_60310_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_60310_SLD.txt 
+IDO70000_59690_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_59690_SLD.txt 
+IDO70000_62540_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_62540_SLD.txt 
+IDO70000_62190_: http://www.bom.gov.au/ntc/IDO70000/IDO70000_62190_SLD.txt 
+nn
+nn
+UPDATING: ww3
+2017-08-15 21:37:02 URL:http://opendap.bom.gov.au:8080//thredds/fileServer/nmoc/ww3_global_fc//ww3_20170815_12.nc [1620017100/1620017100] -> "ww3_20170815_12.nc" [1]
+<!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]--> <!--[if IE 7]> <html class="no-js ie7 oldie" lang="en-US"> <![endif]--> <!--[if IE 8]> <html class="no-js ie8 oldie" lang="en-US"> <![endif]--> <!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]--> <head> <meta http-equiv="refresh" content="0"> <meta http-equiv="set-cookie" content="cf_use_ob=80; expires=Tue, 15-Aug-17 21:39:12 GMT; path=/"> <meta http-equiv="set-cookie" content="cf_ob_info=524:38ef4af937e8654b:SYD; expires=Tue, 15-Aug-17 21:39:12 GMT; path=/"> <title>oceanportal.spc.int | 524: A timeout occurred</title> <meta charset="UTF-8" /> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" /> <meta name="robots" content="noindex, nofollow" /> <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" /> <script src="/cdn-cgi/apps/head/nyhAB3ZAd23hi5ovvRKPSh6QjI4.js"></script><link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/cf.errors.css" type="text/css" media="screen,projection" /> <!--[if lt IE 9]><link rel="stylesheet" id='cf_styles-ie-css' href="/cdn-cgi/styles/cf.errors.ie.css" type="text/css" media="screen,projection" /><![endif]--> <style type="text/css">body{margin:0;padding:0}</style> <!--[if lte IE 9]><script type="text/javascript" src="/cdn-cgi/scripts/jquery.min.js"></script><![endif]--> <!--[if gte IE 10]><!--><script type="text/javascript" src="/cdn-cgi/scripts/zepto.min.js"></script><!--<![endif]--> <script type="text/javascript" src="/cdn-cgi/scripts/cf.common.js"></script> </head> <body> <div id="cf-wrapper"> <div id="cf-error-details" class="cf-error-details-wrapper"> <div class="cf-wrapper cf-error-overview"> <h1> <span class="cf-error-type" data-translate="error">Error</span> <span class="cf-error-code">524</span> <small class="heading-ray-id">Ray ID: 38ef4af937e8654b &bull; 2017-08-15 21:38:42 UTC</small> </h1> <h2 class="cf-subheadline" data-translate="error_desc">A timeout occurred</h2> </div><!-- /.error-overview --> <div class="cf-section cf-highlight cf-status-display"> <div class="cf-wrapper"> <div class="cf-columns cols-3"> <div id="cf-browser-status" class="cf-column cf-status-item cf-browser-status "> <div class="cf-icon-error-container"> <i class="cf-icon cf-icon-browser"></i> <i class="cf-icon-status cf-icon-ok"></i> </div> <span class="cf-status-desc" data-translate="browser_desc">You</span> <h3 class="cf-status-name" data-translate="browser_label">Browser</h3> <span class="cf-status-label" data-translate="browser_status_label">Working</span> </div> <div id="cf-cloudflare-status" class="cf-column cf-status-item cf-cloudflare-status "> <div class="cf-icon-error-container"> <i class="cf-icon cf-icon-cloud"></i> <i class="cf-icon-status cf-icon-ok"></i> </div> <span class="cf-status-desc" data-translate="cloud_desc">Sydney</span> <h3 class="cf-status-name" data-translate="cloud_label">Cloudflare</h3> <span class="cf-status-label" data-translate="cloud_status_label">Working</span> </div> <div id="cf-host-status" class="cf-column cf-status-item cf-host-status cf-error-source"> <div class="cf-icon-error-container"> <i class="cf-icon cf-icon-server"></i> <i class="cf-icon-status cf-icon-error"></i> </div> <span class="cf-status-desc" data-translate="server_desc">oceanportal.spc.int</span> <h3 class="cf-status-name" data-translate="server_label">Host</h3> <span class="cf-status-label" data-translate="server_status_label">Error</span> </div> </div> </div> </div><!-- /.status-display --> <div class="cf-section cf-wrapper"> <div class="cf-columns two"> <div class="cf-column"> <h2 data-translate="what_happened">What happened?</h2> <p data-translate="origin_timed_out">The origin web server timed out responding to this request.</p> </div> <div class="cf-column"> <h2 data-translate="what_can_i_do">What can I do?</h2> <h5 data-translate="if_website_visitor">If you're a visitor of this website:</h5> <p data-translate="try_again_in_a_few">Please try again in a few minutes.</p> <h5 data-translate="if_website_owner">If you're the owner of this website:</h5> <p><span data-translate="524_owner_desc">The connection to the origin web server was made, but the origin web server timed out before responding. The likely cause is an overloaded background task, database or application, stressing the resources on your web server. To resolve, please work with your hosting provider or web development team to free up resources for your database or overloaded application.</span> <a href="https://support.cloudflare.com/hc/en-us/articles/200171926-Error-524" data-translate="addtl_troubleshooting">Additional troubleshooting information here.</a></p> </div> </div> </div><!-- /.section --> <div class="cf-error-footer cf-wrapper"> <p> <span class="cf-footer-item">Cloudflare Ray ID: <strong>38ef4af937e8654b</strong></span> <span class="cf-footer-separator">&bull;</span> <span class="cf-footer-item"><span data-translate="your_ip">Your IP</span>: 52.65.158.32</span> <span class="cf-footer-separator">&bull;</span> <span class="cf-footer-item"><span data-translate="performance_security_by">Performance &amp; security by</span> <a data-orig-proto="https" data-orig-ref="www.cloudflare.com/5xx-error-landing?utm_source=error_footer" id="brand_link" target="_blank">Cloudflare</a></span> </p> </div><!-- /.error-footer --> </div><!-- /#cf-error-details --> </div><!-- /#cf-wrapper --> <!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]--> <!--[if IE 7]> <html class="no-js ie7 oldie" lang="en-US"> <![endif]--> <!--[if IE 8]> <html class="no-js ie8 oldie" lang="en-US"> <![endif]--> <!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]--> <head> <meta http-equiv="refresh" content="0"> <meta http-equiv="set-cookie" content="cf_use_ob=80; expires=Tue, 15-Aug-17 21:40:52 GMT; path=/"> <meta http-equiv="set-cookie" content="cf_ob_info=524:38ef4d6a4591652d:SYD; expires=Tue, 15-Aug-17 21:40:52 GMT; path=/"> <title>oceanportal.spc.int | 524: A timeout occurred</title> <meta charset="UTF-8" /> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" /> <meta name="robots" content="noindex, nofollow" /> <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" /> <script src="/cdn-cgi/apps/head/nyhAB3ZAd23hi5ovvRKPSh6QjI4.js"></script><link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/cf.errors.css" type="text/css" media="screen,projection" /> <!--[if lt IE 9]><link rel="stylesheet" id='cf_styles-ie-css' href="/cdn-cgi/styles/cf.errors.ie.css" type="text/css" media="screen,projection" /><![endif]--> <style type="text/css">body{margin:0;padding:0}</style> <!--[if lte IE 9]><script type="text/javascript" src="/cdn-cgi/scripts/jquery.min.js"></script><![endif]--> <!--[if gte IE 10]><!--><script type="text/javascript" src="/cdn-cgi/scripts/zepto.min.js"></script><!--<![endif]--> <script type="text/javascript" src="/cdn-cgi/scripts/cf.common.js"></script> </head> <body> <div id="cf-wrapper"> <div id="cf-error-details" class="cf-error-details-wrapper"> <div class="cf-wrapper cf-error-overview"> <h1> <span class="cf-error-type" data-translate="error">Error</span> <span class="cf-error-code">524</span> <small class="heading-ray-id">Ray ID: 38ef4d6a4591652d &bull; 2017-08-15 21:40:22 UTC</small> </h1> <h2 class="cf-subheadline" data-translate="error_desc">A timeout occurred</h2> </div><!-- /.error-overview --> <div class="cf-section cf-highlight cf-status-display"> <div class="cf-wrapper"> <div class="cf-columns cols-3"> <div id="cf-browser-status" class="cf-column cf-status-item cf-browser-status "> <div class="cf-icon-error-container"> <i class="cf-icon cf-icon-browser"></i> <i class="cf-icon-status cf-icon-ok"></i> </div> <span class="cf-status-desc" data-translate="browser_desc">You</span> <h3 class="cf-status-name" data-translate="browser_label">Browser</h3> <span class="cf-status-label" data-translate="browser_status_label">Working</span> </div> <div id="cf-cloudflare-status" class="cf-column cf-status-item cf-cloudflare-status "> <div class="cf-icon-error-container"> <i class="cf-icon cf-icon-cloud"></i> <i class="cf-icon-status cf-icon-ok"></i> </div> <span class="cf-status-desc" data-translate="cloud_desc">Sydney</span> <h3 class="cf-status-name" data-translate="cloud_label">Cloudflare</h3> <span class="cf-status-label" data-translate="cloud_status_label">Working</span> </div> <div id="cf-host-status" class="cf-column cf-status-item cf-host-status cf-error-source"> <div class="cf-icon-error-container"> <i class="cf-icon cf-icon-server"></i> <i class="cf-icon-status cf-icon-error"></i> </div> <span class="cf-status-desc" data-translate="server_desc">oceanportal.spc.int</span> <h3 class="cf-status-name" data-translate="server_label">Host</h3> <span class="cf-status-label" data-translate="server_status_label">Error</span> </div> </div> </div> </div><!-- /.status-display --> <div class="cf-section cf-wrapper"> <div class="cf-columns two"> <div class="cf-column"> <h2 data-translate="what_happened">What happened?</h2> <p data-translate="origin_timed_out">The origin web server timed out responding to this request.</p> </div> <div class="cf-column"> <h2 data-translate="what_can_i_do">What can I do?</h2> <h5 data-translate="if_website_visitor">If you're a visitor of this website:</h5> <p data-translate="try_again_in_a_few">Please try again in a few minutes.</p> <h5 data-translate="if_website_owner">If you're the owner of this website:</h5> <p><span data-translate="524_owner_desc">The connection to the origin web server was made, but the origin web server timed out before responding. The likely cause is an overloaded background task, database or application, stressing the resources on your web server. To resolve, please work with your hosting provider or web development team to free up resources for your database or overloaded application.</span> <a href="https://support.cloudflare.com/hc/en-us/articles/200171926-Error-524" data-translate="addtl_troubleshooting">Additional troubleshooting information here.</a></p> </div> </div> </div><!-- /.section --> <div class="cf-error-footer cf-wrapper"> <p> <span class="cf-footer-item">Cloudflare Ray ID: <strong>38ef4d6a4591652d</strong></span> <span class="cf-footer-separator">&bull;</span> <span class="cf-footer-item"><span data-translate="your_ip">Your IP</span>: 52.65.158.32</span> <span class="cf-footer-separator">&bull;</span> <span class="cf-footer-item"><span data-translate="performance_security_by">Performance &amp; security by</span> <a data-orig-proto="https" data-orig-ref="www.cloudflare.com/5xx-error-landing?utm_source=error_footer" id="brand_link" target="_blank">Cloudflare</a></span> </p> </div><!-- /.error-footer --> </div><!-- /#cf-error-details --> </div><!-- /#cf-wrapper --> <!DOCTYPE html> <!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en-US"> <![endif]--> <!--[if IE 7]> <html class="no-js ie7 oldie" lang="en-US"> <![endif]--> <!--[if IE 8]> <html class="no-js ie8 oldie" lang="en-US"> <![endif]--> <!--[if gt IE 8]><!--> <html class="no-js" lang="en-US"> <!--<![endif]--> <head> <meta http-equiv="refresh" content="0"> <meta http-equiv="set-cookie" content="cf_use_ob=80; expires=Tue, 15-Aug-17 21:42:32 GMT; path=/"> <meta http-equiv="set-cookie" content="cf_ob_info=524:38ef4fdb62fe65e1:SYD; expires=Tue, 15-Aug-17 21:42:32 GMT; path=/"> <title>oceanportal.spc.int | 524: A timeout occurred</title> <meta charset="UTF-8" /> <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" /> <meta name="robots" content="noindex, nofollow" /> <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1" /> <script src="/cdn-cgi/apps/head/nyhAB3ZAd23hi5ovvRKPSh6QjI4.js"></script><link rel="stylesheet" id="cf_styles-css" href="/cdn-cgi/styles/cf.errors.css" type="text/css" media="screen,projection" /> <!--[if lt IE 9]><link rel="stylesheet" id='cf_styles-ie-css' href="/cdn-cgi/styles/cf.errors.ie.css" type="text/css" media="screen,projection" /><![endif]--> <style type="text/css">body{margin:0;padding:0}</style> <!--[if lte IE 9]><script type="text/javascript" src="/cdn-cgi/scripts/jquery.min.js"></script><![endif]--> <!--[if gte IE 10]><!--><script type="text/javascript" src="/cdn-cgi/scripts/zepto.min.js"></script><!--<![endif]--> <script type="text/javascript" src="/cdn-cgi/scripts/cf.common.js"></script> </head> <body> <div id="cf-wrapper"> <div id="cf-error-details" class="cf-error-details-wrapper"> <div class="cf-wrapper cf-error-overview"> <h1> <span class="cf-error-type" data-translate="error">Error</span> <span class="cf-error-code">524</span> <small class="heading-ray-id">Ray ID: 38ef4fdb62fe65e1 &bull; 2017-08-15 21:42:02 UTC</small> </h1> <h2 class="cf-subheadline" data-translate="error_desc">A timeout occurred</h2> </div><!-- /.error-overview --> <div class="cf-section cf-highlight cf-status-display"> <div class="cf-wrapper"> <div class="cf-columns cols-3"> <div id="cf-browser-status" class="cf-column cf-status-item cf-browser-status "> <div class="cf-icon-error-container"> <i class="cf-icon cf-icon-browser"></i> <i class="cf-icon-status cf-icon-ok"></i> </div> <span class="cf-status-desc" data-translate="browser_desc">You</span> <h3 class="cf-status-name" data-translate="browser_label">Browser</h3> <span class="cf-status-label" data-translate="browser_status_label">Working</span> </div> <div id="cf-cloudflare-status" class="cf-column cf-status-item cf-cloudflare-status "> <div class="cf-icon-error-container"> <i class="cf-icon cf-icon-cloud"></i> <i class="cf-icon-status cf-icon-ok"></i> </div> <span class="cf-status-desc" data-translate="cloud_desc">Sydney</span> <h3 class="cf-status-name" data-translate="cloud_label">Cloudflare</h3> <span class="cf-status-label" data-translate="cloud_status_label">Working</span> </div> <div id="cf-host-status" class="cf-column cf-status-item cf-host-status cf-error-source"> <div class="cf-icon-error-container"> <i class="cf-icon cf-icon-server"></i> <i class="cf-icon-status cf-icon-error"></i> </div> <span class="cf-status-desc" data-translate="server_desc">oceanportal.spc.int</span> <h3 class="cf-status-name" data-translate="server_label">Host</h3> <span class="cf-status-label" data-translate="server_status_label">Error</span> </div> </div> </div> </div><!-- /.status-display --> <div class="cf-section cf-wrapper"> <div class="cf-columns two"> <div class="cf-column"> <h2 data-translate="what_happened">What happened?</h2> <p data-translate="origin_timed_out">The origin web server timed out responding to this request.</p> </div> <div class="cf-column"> <h2 data-translate="what_can_i_do">What can I do?</h2> <h5 data-translate="if_website_visitor">If you're a visitor of this website:</h5> <p data-translate="try_again_in_a_few">Please try again in a few minutes.</p> <h5 data-translate="if_website_owner">If you're the owner of this website:</h5> <p><span data-translate="524_owner_desc">The connection to the origin web server was made, but the origin web server timed out before responding. The likely cause is an overloaded background task, database or application, stressing the resources on your web server. To resolve, please work with your hosting provider or web development team to free up resources for your database or overloaded application.</span> <a href="https://support.cloudflare.com/hc/en-us/articles/200171926-Error-524" data-translate="addtl_troubleshooting">Additional troubleshooting information here.</a></p> </div> </div> </div><!-- /.section --> <div class="cf-error-footer cf-wrapper"> <p> <span class="cf-footer-item">Cloudflare Ray ID: <strong>38ef4fdb62fe65e1</strong></span> <span class="cf-footer-separator">&bull;</span> <span class="cf-footer-item"><span data-translate="your_ip">Your IP</span>: 52.65.158.32</span> <span class="cf-footer-separator">&bull;</span> <span class="cf-footer-item"><span data-translate="performance_security_by">Performance &amp; security by</span> <a data-orig-proto="https" data-orig-ref="www.cloudflare.com/5xx-error-landing?utm_source=error_footer" id="brand_link" target="_blank">Cloudflare</a></span> </p> </div><!-- /.error-footer --> </div><!-- /#cf-error-details --> </div><!-- /#cf-wrapper -->nn
+UPDATING: chloro daily
+http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A2017227.L3m_DAY_CHL_chlor_a_4km.nc No such file or directory http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A2017227.L3m_DAY_CHL_chlor_a_4km.nc http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A2017226.L3m_DAY_CHL_chlor_a_4km.nc No such file or directory http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A2017226.L3m_DAY_CHL_chlor_a_4km.nc http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A2017225.L3m_DAY_CHL_chlor_a_4km.nc No such file or directory http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A2017225.L3m_DAY_CHL_chlor_a_4km.nc http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A2017224.L3m_DAY_CHL_chlor_a_4km.nc No such file or directory http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A2017224.L3m_DAY_CHL_chlor_a_4km.nc 20170813 marshall http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=marshall&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} vanuatu_southern http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=vanuatu_southern&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} wsm_sou http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=wsm_sou&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} kiribati_sou_line http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=kiribati_sou_line&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} fiji http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=fiji&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} fsm_west http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=fsm_west&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} cook_nor http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=cook_nor&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} wsm_nor http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=wsm_nor&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} cook http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=cook&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} png http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=png&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} vanuatu_central http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=vanuatu_central&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} solomon http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=solomon&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} kiribati_nor_line http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=kiribati_nor_line&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} cook_sou http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=cook_sou&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} kiribati_gilbert http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=kiribati_gilbert&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} samoa http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=samoa&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} kiribati_phoenix http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=kiribati_phoenix&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} palau http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=palau&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} pac http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=pac&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} vanuatu http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=vanuatu&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} nauru http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=nauru&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} vanuatu_northern http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=vanuatu_northern&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} fsm_east http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=fsm_east&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} tuvalu http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=tuvalu&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} kiribati http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=kiribati&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} tonga http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=tonga&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} fsm http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=fsm&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} niue http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=niue&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} marshall http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=marshall&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} vanuatu_southern http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=vanuatu_southern&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} wsm_sou http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=wsm_sou&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} kiribati_sou_line http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=kiribati_sou_line&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} fiji http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=fiji&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} fsm_west http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=fsm_west&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} cook_nor http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=cook_nor&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} wsm_nor http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=wsm_nor&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} cook http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=cook&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} png http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=png&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} vanuatu_central http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=vanuatu_central&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} solomon http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=solomon&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} kiribati_nor_line http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=kiribati_nor_line&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} cook_sou http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=cook_sou&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} kiribati_gilbert http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=kiribati_gilbert&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} samoa http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=samoa&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} kiribati_phoenix http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=kiribati_phoenix&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} palau http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=palau&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} pac http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=pac&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} vanuatu http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=vanuatu&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} nauru http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=nauru&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} vanuatu_northern http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=vanuatu_northern&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} fsm_east http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=fsm_east&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} tuvalu http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=tuvalu&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} kiribati http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=kiribati&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} tonga http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=tonga&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} fsm http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=fsm&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} niue http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=niue&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} marshall http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=marshall&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} vanuatu_southern http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=vanuatu_southern&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} wsm_sou http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=wsm_sou&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} kiribati_sou_line http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=kiribati_sou_line&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} fiji http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=fiji&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} fsm_west http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=fsm_west&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} cook_nor http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=cook_nor&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} wsm_nor http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=wsm_nor&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} cook http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=cook&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} png http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=png&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} vanuatu_central http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=vanuatu_central&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} solomon http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=solomon&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} kiribati_nor_line http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=kiribati_nor_line&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} cook_sou http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=cook_sou&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} kiribati_gilbert http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=kiribati_gilbert&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} samoa http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=samoa&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} kiribati_phoenix http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=kiribati_phoenix&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} palau http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=palau&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} pac http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=pac&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} vanuatu http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=vanuatu&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} nauru http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=nauru&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} vanuatu_northern http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=vanuatu_northern&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} fsm_east http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=fsm_east&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} tuvalu http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=tuvalu&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} kiribati http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=kiribati&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} tonga http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=tonga&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} fsm http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=fsm&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"} niue http://oceanportal.spc.int/oc/cgi/portal.py?plot=map&area=niue&period=daily&dataset=chlorophyll&date=20170813&mode=preprocess&variable=chldaily {"error": "Data not available: /opt/data/chloro/daily/A2017225_preliminary.nc"}nn
+UPDATING: chloro monthly
+--2017-08-15 21:45:24--  http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A20171822017212.L3m_MO_CHL_chlor_a_4km.nc
+Resolving oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)... 169.154.128.84, 2001:4d0:2418:128::84
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|169.154.128.84|:80... failed: Connection timed out.
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|2001:4d0:2418:128::84|:80... failed: Cannot assign requested address.
+Retrying.
+
+--2017-08-15 21:47:33--  (try: 2)  http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A20171822017212.L3m_MO_CHL_chlor_a_4km.nc
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|169.154.128.84|:80... failed: Connection timed out.
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|2001:4d0:2418:128::84|:80... failed: Cannot assign requested address.
+Retrying.
+
+--2017-08-15 21:49:43--  (try: 3)  http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A20171822017212.L3m_MO_CHL_chlor_a_4km.nc
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|169.154.128.84|:80... failed: Connection timed out.
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|2001:4d0:2418:128::84|:80... failed: Cannot assign requested address.
+Retrying.
+
+--2017-08-15 21:51:53--  (try: 4)  http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A20171822017212.L3m_MO_CHL_chlor_a_4km.nc
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|169.154.128.84|:80... failed: Connection timed out.
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|2001:4d0:2418:128::84|:80... failed: Cannot assign requested address.
+Retrying.
+
+--2017-08-15 21:54:04--  (try: 5)  http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A20171822017212.L3m_MO_CHL_chlor_a_4km.nc
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|169.154.128.84|:80... failed: Connection timed out.
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|2001:4d0:2418:128::84|:80... failed: Cannot assign requested address.
+Retrying.
+
+--2017-08-15 21:56:16--  (try: 6)  http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A20171822017212.L3m_MO_CHL_chlor_a_4km.nc
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|169.154.128.84|:80... failed: Connection timed out.
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|2001:4d0:2418:128::84|:80... failed: Cannot assign requested address.
+Retrying.
+
+--2017-08-15 21:58:30--  (try: 7)  http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A20171822017212.L3m_MO_CHL_chlor_a_4km.nc
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|169.154.128.84|:80... failed: Connection timed out.
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|2001:4d0:2418:128::84|:80... failed: Cannot assign requested address.
+Retrying.
+
+--2017-08-15 22:00:44--  (try: 8)  http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A20171822017212.L3m_MO_CHL_chlor_a_4km.nc
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|169.154.128.84|:80... failed: Connection timed out.
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|2001:4d0:2418:128::84|:80... failed: Cannot assign requested address.
+Retrying.
+
+--2017-08-15 22:02:59--  (try: 9)  http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A20171822017212.L3m_MO_CHL_chlor_a_4km.nc
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|169.154.128.84|:80... failed: Connection timed out.
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|2001:4d0:2418:128::84|:80... failed: Cannot assign requested address.
+Retrying.
+
+--2017-08-15 22:05:15--  (try:10)  http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A20171822017212.L3m_MO_CHL_chlor_a_4km.nc
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|169.154.128.84|:80... failed: Connection timed out.
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|2001:4d0:2418:128::84|:80... failed: Cannot assign requested address.
+Retrying.
+
+--2017-08-15 22:07:33--  (try:11)  http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A20171822017212.L3m_MO_CHL_chlor_a_4km.nc
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|169.154.128.84|:80... failed: Connection timed out.
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|2001:4d0:2418:128::84|:80... failed: Cannot assign requested address.
+Retrying.
+
+--2017-08-15 22:09:50--  (try:12)  http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A20171822017212.L3m_MO_CHL_chlor_a_4km.nc
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|169.154.128.84|:80... failed: Connection timed out.
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|2001:4d0:2418:128::84|:80... failed: Cannot assign requested address.
+Retrying.
+
+--2017-08-15 22:12:07--  (try:13)  http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A20171822017212.L3m_MO_CHL_chlor_a_4km.nc
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|169.154.128.84|:80... failed: Connection timed out.
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|2001:4d0:2418:128::84|:80... failed: Cannot assign requested address.
+Retrying.
+
+--2017-08-15 22:14:24--  (try:14)  http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A20171822017212.L3m_MO_CHL_chlor_a_4km.nc
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|169.154.128.84|:80... failed: Connection timed out.
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|2001:4d0:2418:128::84|:80... failed: Cannot assign requested address.
+Retrying.
+
+--2017-08-15 22:16:42--  (try:15)  http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A20171822017212.L3m_MO_CHL_chlor_a_4km.nc
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|169.154.128.84|:80... failed: Connection timed out.
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|2001:4d0:2418:128::84|:80... failed: Cannot assign requested address.
+Retrying.
+
+--2017-08-15 22:18:59--  (try:16)  http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A20171822017212.L3m_MO_CHL_chlor_a_4km.nc
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|169.154.128.84|:80... failed: Connection timed out.
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|2001:4d0:2418:128::84|:80... failed: Cannot assign requested address.
+Retrying.
+
+--2017-08-15 22:21:16--  (try:17)  http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A20171822017212.L3m_MO_CHL_chlor_a_4km.nc
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|169.154.128.84|:80... failed: Connection timed out.
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|2001:4d0:2418:128::84|:80... failed: Cannot assign requested address.
+Retrying.
+
+--2017-08-15 22:23:34--  (try:18)  http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A20171822017212.L3m_MO_CHL_chlor_a_4km.nc
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|169.154.128.84|:80... failed: Connection timed out.
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|2001:4d0:2418:128::84|:80... failed: Cannot assign requested address.
+Retrying.
+
+--2017-08-15 22:25:51--  (try:19)  http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A20171822017212.L3m_MO_CHL_chlor_a_4km.nc
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|169.154.128.84|:80... failed: Connection timed out.
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|2001:4d0:2418:128::84|:80... failed: Cannot assign requested address.
+Retrying.
+
+--2017-08-15 22:28:08--  (try:20)  http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A20171822017212.L3m_MO_CHL_chlor_a_4km.nc
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|169.154.128.84|:80... failed: Connection timed out.
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|2001:4d0:2418:128::84|:80... failed: Cannot assign requested address.
+Giving up.
+
+--2017-08-15 22:30:15--  http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A20171522017181.L3m_MO_CHL_chlor_a_4km.nc
+Resolving oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)... 169.154.128.84, 2001:4d0:2418:128::84
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|169.154.128.84|:80... failed: Connection timed out.
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|2001:4d0:2418:128::84|:80... failed: Cannot assign requested address.
+Retrying.
+
+--2017-08-15 22:32:25--  (try: 2)  http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A20171522017181.L3m_MO_CHL_chlor_a_4km.nc
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|169.154.128.84|:80... failed: Connection timed out.
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|2001:4d0:2418:128::84|:80... failed: Cannot assign requested address.
+Retrying.
+
+--2017-08-15 22:34:34--  (try: 3)  http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A20171522017181.L3m_MO_CHL_chlor_a_4km.nc
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|169.154.128.84|:80... failed: Connection timed out.
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|2001:4d0:2418:128::84|:80... failed: Cannot assign requested address.
+Retrying.
+
+--2017-08-15 22:36:45--  (try: 4)  http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A20171522017181.L3m_MO_CHL_chlor_a_4km.nc
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|169.154.128.84|:80... failed: Connection timed out.
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|2001:4d0:2418:128::84|:80... failed: Cannot assign requested address.
+Retrying.
+
+--2017-08-15 22:38:56--  (try: 5)  http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A20171522017181.L3m_MO_CHL_chlor_a_4km.nc
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|169.154.128.84|:80... failed: Connection timed out.
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|2001:4d0:2418:128::84|:80... failed: Cannot assign requested address.
+Retrying.
+
+--2017-08-15 22:41:08--  (try: 6)  http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A20171522017181.L3m_MO_CHL_chlor_a_4km.nc
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|169.154.128.84|:80... failed: Connection timed out.
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|2001:4d0:2418:128::84|:80... failed: Cannot assign requested address.
+Retrying.
+
+--2017-08-15 22:43:22--  (try: 7)  http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A20171522017181.L3m_MO_CHL_chlor_a_4km.nc
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|169.154.128.84|:80... failed: Connection timed out.
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|2001:4d0:2418:128::84|:80... failed: Cannot assign requested address.
+Retrying.
+
+--2017-08-15 22:45:36--  (try: 8)  http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A20171522017181.L3m_MO_CHL_chlor_a_4km.nc
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|169.154.128.84|:80... failed: Connection timed out.
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|2001:4d0:2418:128::84|:80... failed: Cannot assign requested address.
+Retrying.
+
+--2017-08-15 22:47:51--  (try: 9)  http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A20171522017181.L3m_MO_CHL_chlor_a_4km.nc
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|169.154.128.84|:80... failed: Connection timed out.
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|2001:4d0:2418:128::84|:80... failed: Cannot assign requested address.
+Retrying.
+
+--2017-08-15 22:50:08--  (try:10)  http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A20171522017181.L3m_MO_CHL_chlor_a_4km.nc
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|169.154.128.84|:80... failed: Connection timed out.
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|2001:4d0:2418:128::84|:80... failed: Cannot assign requested address.
+Retrying.
+
+--2017-08-15 22:52:25--  (try:11)  http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A20171522017181.L3m_MO_CHL_chlor_a_4km.nc
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|169.154.128.84|:80... failed: Connection timed out.
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|2001:4d0:2418:128::84|:80... failed: Cannot assign requested address.
+Retrying.
+
+--2017-08-15 22:54:42--  (try:12)  http://oceandata.sci.gsfc.nasa.gov/cgi/getfile/A20171522017181.L3m_MO_CHL_chlor_a_4km.nc
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|169.154.128.84|:80... failed: Connection timed out.
+Connecting to oceandata.sci.gsfc.nasa.gov (oceandata.sci.gsfc.nasa.gov)|2001:4d0:2418:128::84|:80... failed: Cannot assign requested address.
+Retrying.
+
+Traceback (most recent call last):
+  File "<stdin>", line 143, in <module>
+  File "/usr/lib/python2.7/subprocess.py", line 536, in check_call
+    retcode = call(*popenargs, **kwargs)
+  File "/usr/lib/python2.7/subprocess.py", line 523, in call
+    return Popen(*popenargs, **kwargs).wait()
+  File "/usr/lib/python2.7/subprocess.py", line 1392, in wait
+    pid, sts = _eintr_retry_call(os.waitpid, self.pid, 0)
+  File "/usr/lib/python2.7/subprocess.py", line 476, in _eintr_retry_call
+    return func(*args)
+KeyboardInterrupt
