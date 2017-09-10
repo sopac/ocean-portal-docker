@@ -11,3 +11,4 @@ userpass
 *.odt
 /data/maptiles/*.png
 /data/comp/raster/logs/*.csv
+/logs/
