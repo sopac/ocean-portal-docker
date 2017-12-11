@@ -31,5 +31,7 @@ ADD ./ocean-portal.conf /etc/apache2/sites-available/
 RUN ln -s /etc/apache2/sites-available/ocean-portal.conf /etc/apache2/sites-enabled/
 RUN a2ensite ocean-portal
 
+ADD . /ocean-portal/
+
 #CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]
 CMD ["apachectl", "-D", "FOREGROUND"]

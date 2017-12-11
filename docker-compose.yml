@@ -11,8 +11,8 @@ services:
     #environment:
     #  - VIRTUAL_HOST=sub.domain.com
     volumes:
-    - .:/ocean-portal
     - ./data:/opt/data
+    # - .:/ocean-portal # Uncomment this for development (so that changes to source are picked up live)
     #restart: on-failure:5
     user: root
     #command: mkdir -p /opt/ocean-portal && python setup.py install --root=/opt/ocean-portal/
