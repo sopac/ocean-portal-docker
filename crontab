@@ -1,0 +1,57 @@
+##########################################################
+# /!\ WARNING /!\ 
+# I found a crontab file on the live server, but it is not the one currently used.
+# I couldn't find the currently used crontab file...
+##########################################################
+
+# /!\ WARNING /!\ If you make changes here, make sure to also update docker-entrypoint.sh
+
+# update reynolds data
+@daily  /ocean-portal/src/update-data reynolds >> /opt/data/logs_reynolds_$(date +\%Y\%m\%d-\%H\%M).txt 2>&1
+
+# update ersst data
+@daily  /ocean-portal/src/update-data ersst >> /opt/data/logs_ersst_$(date +\%Y\%m\%d-\%H\%M).txt 2>&1
+
+# update sea level data
+0 0 5 * *  /ocean-portal/src/update-data sealevel >> /opt/data/logs_sealevel_$(date +\%Y\%m\%d-\%H\%M).txt 2>&1
+0 0 10 * *  /ocean-portal/src/update-data sealevel >> /opt/data/logs_sealevel_$(date +\%Y\%m\%d-\%H\%M).txt 2>&1
+
+# calculate deciles for reynolds data
+###########################################
+#Commented out because of missing data,
+#should turn on both once the missing data
+#is uploaded
+###########################################
+#0 3 3 * *  /ocean-portal/src/update-data decile >> /opt/data/logs_decile_$(date +\%Y\%m\%d-\%H\%M).txt 2>&1
+#0 3 17 * *  /ocean-portal/src/update-data decile >> /opt/data/logs_decile_$(date +\%Y\%m\%d-\%H\%M).txt 2>&1
+
+# update ww3 forecast data
+0 11 * * *  /ocean-portal/src/update-data ww3 >> /opt/data/logs_ww3_$(date +\%Y\%m\%d-\%H\%M).txt 2>&1
+0 18 * * *  /ocean-portal/src/update-data ww3 >> /opt/data/logs_ww3_$(date +\%Y\%m\%d-\%H\%M).txt 2>&1
+
+# chlorophyll data
+###########################################
+#data downloading is fine
+#map plotting has an issue
+#keep the data downloading going in the meantime
+###########################################
+0 1 * * *  /ocean-portal/src/update-data chloro daily >> /opt/data/logs_chloro-daily_$(date +\%Y\%m\%d-\%H\%M).txt 2>&1
+0 2 * * *  /ocean-portal/src/update-data chloro monthly >> /opt/data/logs_chloro-monthly_$(date +\%Y\%m\%d-\%H\%M).txt 2>&1
+
+# poama
+0 3 * * *  /ocean-portal/src/update-data poamasla >> /opt/data/logs_poamasla_$(date +\%Y\%m\%d-\%H\%M).txt 2>&1
+0 3 * * *  /ocean-portal/src/update-data poamassta >> /opt/data/logs_poamassta_$(date +\%Y\%m\%d-\%H\%M).txt 2>&1
+
+# coral
+@daily  /ocean-portal/src/update-data coral >> /opt/data/logs_coral_$(date +\%Y\%m\%d-\%H\%M).txt 2>&1
+@daily  /ocean-portal/src/update-data coral_ol >> /opt/data/logs_coral_ol_$(date +\%Y\%m\%d-\%H\%M).txt 2>&1
+
+# current
+30 0 * * *  /ocean-portal/src/update-data currents >> /opt/data/logs_currents_$(date +\%Y\%m\%d-\%H\%M).txt 2>&1
+10 5 * * *  /ocean-portal/src/update-data currents >> /opt/data/logs_currents_$(date +\%Y\%m\%d-\%H\%M).txt 2>&1
+
+# download mur and process fronts
+0 14 * * *  /ocean-portal/src/update-data mur >> /opt/data/logs_mur_$(date +\%Y\%m\%d-\%H\%M).txt 2>&1
+
+# Near real time sea level
+@daily  /ocean-portal/src/update-data msla >> /opt/data/logs_msla_$(date +\%Y\%m\%d-\%H\%M).txt 2>&1
