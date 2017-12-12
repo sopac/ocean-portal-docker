@@ -33,5 +33,9 @@ RUN a2ensite ocean-portal
 
 ADD . /ocean-portal/
 
+RUN cd /ocean-portal && python setup.py install --root=/opt/ocean-portal/
+ADD js/comp/datepick /opt/ocean-portal/usr/local/share/portal/js/comp/
+RUN chmod 777 -R /opt/data/
+
 #CMD ["/usr/sbin/apache2", "-D", "FOREGROUND"]
 CMD ["apachectl", "-D", "FOREGROUND"]
